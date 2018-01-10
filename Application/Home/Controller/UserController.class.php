@@ -16,7 +16,13 @@ class UserController extends CommonController {
     }
 
     public function imgVerify() {
-        $Verify = new \Think\Verify();
+        $Verify = new \Think\Verify(array(
+            'useCurve' => false,
+            'useNoise' => false,
+            'length' => 4,
+            'codeSet' => '0123456789',
+            'fontSize' => 30,
+        ));
         $Verify->entry();
     }
 }
