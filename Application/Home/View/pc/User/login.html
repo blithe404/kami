@@ -1,0 +1,41 @@
+<layout name="Common/layout"/>
+<div id="wrap">
+    <div class="login">
+        <form action="{:U('login')}" method="post">
+            <ul>
+                <li style="width:500px">
+                    <div>
+                        <input type="text" name="username" id="username" class="required alphanumeric"
+                               placeholder="用户名">
+                    </div>
+                </li>
+                <li style="width:500px">
+                    <div>
+                        <input type="password" name="password" id="password" class="required " placeholder="请输入密码">
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <input type="text" name="img_code" style="width:50px;background-image:none;vertical-align:top;" id="validatecode"
+                               placeholder="验证码">
+                        <img src="{:U('imgVerify')}" id="changeCode" onclick="this.src='code?' + Math.random()"
+                             title="点击换一张" style="cursor:pointer" width="85" height="31" alt="">
+                    </div>
+                </li>
+                <li style="width:282px">
+                    <span class="fr">
+                        <a href="{:U('findPwd')}">忘记密码?</a>
+                    </span>
+                </li>
+                <li>
+                    <input type="submit" name="Submit2" value="登录">
+                </li>
+            </ul>
+        </form>
+        <div class="link">
+            还没有账号？<br>
+            <a href="{:U('register')}">注册新用户</a>
+        </div>
+        <br clear="all">
+    </div>
+</div>

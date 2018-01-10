@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>{$meta_title}</title>
+    <link rel="stylesheet" href="__PUBLIC__/home/css/common.css">
+    <link rel="stylesheet" href="__PUBLIC__/home/css/style.css">
+
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+</head>
+<body>
+<div id="header">
+    <div class="top">
+        <div class="contain">
+            <span class="fr">
+                <a href="{:U('User/index')}">会员中心</a> |
+                <a href="{:U('User/pay')}">充值</a> |
+                <a href="javascript:void(0);">站点余额：0元</a>
+            </span>
+            <div id="jl_usrBox">
+                你好，欢迎来到一直游点卡商城！
+                <a href="{:U('User/register')}">注册</a> |
+                <a href="{:U('User/login')}">登录</a>
+            </div>
+        </div>
+    </div>
+    <div class="contain">
+        <a href="/">
+            <img src="__PUBLIC__/home/imgs/home_logo.png" class="logo" width="218"
+                 heigth="83">
+        </a>
+        <div class="search">
+            <div class="searArea">
+                <form action="{:U('Product/lists')}" method="get">
+                    <input type="text" name="keyword" placeholder="热门" value="">
+                    <input type="submit" value="搜索">
+                </form>
+            </div>
+            <div gishop="word" id="adVt1">
+                <p>
+                    热搜： <a href="{:U('Product/lists/cat=盛大')}">盛大</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

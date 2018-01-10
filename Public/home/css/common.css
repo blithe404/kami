@@ -1,0 +1,444 @@
+@charset "utf-8";
+/*
+主题名称:公用样式
+描述: 样式
+作者: 李建
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+}
+ol, ul, dl {
+  list-style: none;
+  list-style-type: none;
+}
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+ul li {
+  list-style: none;
+}
+body{
+  color:#333;
+  font-family:"微软雅黑";
+  font-size:12px;
+}
+
+/* reset */
+.fl{
+  float:left;
+}
+.fr{
+  float:right;
+}
+a{
+  color:#00ACED;
+  text-decoration:none;
+}
+.red{
+  color:#ee2222;
+}
+.orange{
+  color:#ff5500;
+}
+.blue{
+  color:#0083ce;
+}
+.pink{
+  color:#FF007F;
+}
+.black{
+  color:#333;
+}
+.white{
+  color:#fff;
+}
+.gray{
+  color:#a8a8a8;
+}
+.grayD{
+  color:#666;
+  margin-left:5px;
+}
+.pink{
+  color:#FF007F;
+}
+.green{
+  color:#00B285;
+}
+.font12{
+  font-size:12px;
+}
+.font14{
+  font-size:14px;
+}
+.font16{
+  font-size:16px;
+}
+.font18{
+  font-size:18px;
+}
+.font24{
+  font-size:24px;
+}
+.font32{
+  font-size:32px;
+}
+.b{
+  font-weight:bold;
+}
+.n{
+  font-weight:normal;
+}
+.hid{
+  display:none;
+}
+label{
+  cursor:pointer;
+}
+input[type="text"],input[type="password"]{
+  outline:0;
+}
+
+/* 公用 */
+#header{
+  height:148px;
+}
+#header .logo{
+  float:left;
+  margin-top:5px;
+  width:251px;
+  height:102px;
+}
+#header .search{
+  float:left;
+  padding:30px 0 0 145px;
+}
+#header .search .searArea{
+  width:593px;
+  height:38px;
+  border:1px solid #0083ce;
+}
+#header .search .searArea .searSel{
+  display:inline-block;
+  padding:0 8px 0 15px;
+  cursor:pointer;
+  line-height:40px;
+}
+#header .search .searArea .searSel i{
+  width:13px;
+  height:11px;
+  background:url(../../images/icon_8.png) no-repeat;
+  display:inline-block;
+  margin-left:15px;
+}
+#header .search .searArea input[type="text"]{
+  width:512px;
+  height:36px;
+  line-height:36px;
+  text-indent:5px;
+  border:0;
+  float:left;
+}
+#header .search .searArea input[type="submit"]{
+  float:right;
+  width:79px;
+  height:38px;
+  border:0;
+  background:#0083ce;
+  color:#fff;
+  font-size:14px;
+  cursor:pointer;
+}
+#header .searOutPo{
+  position:relative;
+}
+#header .search .searOut{
+  border:2px solid #0083ce;
+  position:absolute;
+  width:100%;
+  left:0;
+  top:80px;
+  z-index:10;
+  background:#fff;
+  display:none;
+}
+#header .search .searOut .searImg{
+  position:absolute;
+  top:-8px;
+}
+#header .search .searOut .history{
+  height:36px;
+  line-height:36px;
+  border-bottom:1px solid #eee;
+  margin:0 15px;
+}
+#header .search .searOut .history a{
+  display:inline-block;
+  margin-left:10px;
+}
+#header .search .searOut .history img{
+  position:relative;
+  top:7px;
+  right:10px;
+}
+#header .search .searOut .key{
+  height:43px;
+  padding:15px 15px 0;
+}
+#header .search .searOut .key input[type="text"]{
+  width:182px;
+  height:28px;
+  line-height:28px;
+  border:1px solid #ddd;
+  padding:0 8px;
+}
+#header .search .searOut .key input[type="submit"]{
+  width:79px;
+  height:30px;
+  border:0;
+  background:#0083ce;
+  color:#fff;
+  cursor:pointer;
+  margin-left:10px;
+  border-radius:5px;
+  outline:0;
+}
+#header .search .searOut .key a{
+  width:52px;
+  height:29px;
+  line-height:29px;
+  text-indent:20px;
+  background:url(../../images/back.png) no-repeat;
+  display:inline-block;
+  color:#fff;
+  margin-right:10px;
+  display:none;
+}
+#header .search .searOut dl dt{
+  border-bottom:1px solid #0083ce;
+  height:34px;
+  padding:0 0 0 15px;
+}
+#header .search .searOut dl dt a{
+  width:125px;
+  display:inline-block;
+  text-align:center;
+  line-height:31px;
+  height:31px;
+  background:#f2f2f2;
+  color:#666;
+  font-size:14px;
+  border-top:2px solid #fff;
+  margin-right:10px;
+}
+#header .search .searOut dl dt a.sel{
+  width:123px;
+  height:33px;
+  border:1px solid #0083ce;
+  border-top:2px solid #0083ce;
+  border-bottom:0;
+  position:relative;
+  top:0;
+  background:#fff;
+  font-weight:bold;
+}
+#header .search .searOut dl dd .letter{
+  height:35px;
+  background:url(../../images/title_bg_3.jpg) repeat-x;
+  padding-left:10px;
+}
+#header .search .searOut dl dd .letter a{
+  float:left;
+  padding:0 10px;
+  margin:0 5px;
+  font-size:16px;
+  line-height:33px;
+  color:#666;
+}
+#header .search .searOut dl dd .letter a:hover{
+  border-bottom:2px solid #0083ce;
+  position:relative;
+  top:0;
+  color:#0083ce;
+}
+#header .search .searOut dl dd .letter a.sel{
+  border-bottom:2px solid #0083ce;
+  position:relative;
+  top:0;
+  color:#0083ce;
+}
+#header .search .searOut dl dd ul{
+  padding:15px 0 15px 20px;
+}
+#header .search .searOut ul li{
+  width:16%;
+  float:left;
+  line-height:30px;
+}
+#header .search .searOut ul li a{
+  display:block;
+  color:#666;
+  background:url(../../images/icon_9.jpg) 0 12px no-repeat;
+  text-indent:15px;
+}
+#header .search .searOut ul li a:hover{
+  color:#0083ce;
+}
+#header .search .searOut .searResult{
+  padding-left:15px;
+  display:none;
+}
+#header .search .searOut .searResult h4{
+  font-size:14px;
+  padding:10px 0;
+}
+#header .search .searOut .searResult p{
+  line-height:40px;
+  border-top:1px solid #ddd;
+  margin-top:10px;
+  padding-left:10px;
+}
+#header .search .searOut .searResult p a{
+  color:#0083ce;
+}
+#header .search .searOut .resultNone{}
+#header .search .searOut .resultNone img{
+  float:left;
+  position:relative;
+  left:20px;
+}
+#header .search .searOut .resultNone .des{
+  display:block;
+  margin-left:90px;
+  line-height:26px;
+  color:#999;
+}
+#header .search p{
+  padding-top:5px;
+}
+#header .search p a{
+  color:#a1a0a0;
+  display:inline-block;
+  margin-right:8px;
+}
+#header .mark{
+  float:right;
+}
+#header .step{
+  padding:35px 0 0 150px;
+  float:left;
+}
+.top{
+  height:38px;
+  line-height:38px;
+  background:#f3f3f3;
+  color:#666;
+}
+.top a{
+  color:#666;
+}
+.nav{
+  height:35px;
+  line-height:34px;
+  background:#0083ce;
+}
+.nav .title{
+  float:left;
+  width:180px;
+  font-size:14px;
+  font-weight:bold;
+  color:#fff;
+  text-align:center;
+}
+.nav ul{
+  padding-left:27px;
+}
+.nav ul li{
+  width:110px;
+  float:left;
+}
+.nav a{
+  font-size:14px;
+  font-weight:bold;
+  color:#fff;
+}
+.contain{
+  width:1200px;
+  margin:0 auto;
+}
+#wrap{
+  width:1200px;
+  margin:0 auto;
+}
+#footer{
+  border-top:2px solid #7f7e7e;
+  margin-top:20px;
+}
+#footer ul{
+  padding:20px 0 35px 240px;
+}
+#footer ul li{
+  float:left;
+  width:170px;
+  line-height:21px;
+}
+#footer ul li h3{
+  color:#666;
+  font-size:14px;
+  padding-bottom:5px;
+}
+#footer ul li a{
+  color:#666;
+}
+#footer p{
+  border-bottom:8px solid #0083ce;
+  margin:0 120px;
+  text-align:center;
+  color:#7f7e7e;
+  line-height:26px;
+}
+
+/* 翻页 */
+.page{
+  padding:60px 0;
+  text-align:center;
+}
+.page a{
+  display:inline-block;
+  padding:3px 10px;
+  border:1px solid #dee3e7;
+  border-radius:2px;
+  color:#666;
+  margin:0 2px;
+}
+.page a.cur{
+  background:#0083ce;
+  color:#fff;
+}
+
+/* 警惕用语 */
+.warn{
+  border:1px solid #FFDE5B;
+  background:#FFFDE6;
+  width:1178px;
+  height:28px;
+  line-height:28px;
+  margin:5px auto;
+  padding:0 10px;
+}
+.warn img{
+  position:relative;
+  top:3px;
+  margin-right:6px;
+}
+.warn .close{
+  float:right;
+  color:#999;
+}
