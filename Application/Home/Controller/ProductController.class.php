@@ -9,6 +9,10 @@
 namespace Home\Controller;
 
 
-class ProductController {
+class ProductController extends CommonController {
+    public function lists() {
 
+        $this->assign('meta_title', '商品列表');
+        $this->display();
+    }
 }

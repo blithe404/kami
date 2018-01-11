@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/Public/home/css/style.css">
 
     <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="/Public/home/js/common.js"></script>
 </head>
 <body>
 <div id="header">
@@ -17,13 +18,16 @@
         <div class="contain">
             <span class="fr">
                 <a href="<?php echo U('User/index');?>">会员中心</a> |
-                <a href="<?php echo U('User/pay');?>">充值</a> |
-                <a href="javascript:void(0);">站点余额：0元</a>
+                <a href="<?php echo U('PayOrder/create');?>">充值</a> |
+                <a href="javascript:void(0);">站点余额：<?php echo (UBLANCE); ?>元</a>
             </span>
             <div id="jl_usrBox">
-                你好，欢迎来到一直游点卡商城！
-                <a href="<?php echo U('User/register');?>">注册</a> |
-                <a href="<?php echo U('User/login');?>">登录</a>
+                你好，欢迎来到<?php echo ($confs["site_name"]); ?>！
+                <?php if(empty(UID)): ?><a href="<?php echo U('User/register');?>">注册</a> |
+                    <a href="<?php echo U('User/login');?>">登录</a>
+                <?php else: ?>
+                    <a href="javascript:void(0)"><?php echo (UNAME); ?></a>
+                    <a href="<?php echo U('User/logout');?>">退出</a><?php endif; ?>
             </div>
         </div>
     </div>

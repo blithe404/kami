@@ -9,6 +9,9 @@
 namespace Home\Model;
 
 
-class ConfModel {
+class ConfModel extends CommonModel {
+    public function getConfs() {
+        return $this->getField('title,value', true);
 
+    }
 }

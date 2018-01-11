@@ -9,6 +9,20 @@
 namespace Home\Model;
 
 
-class CommonModel {
+use Think\Model;
+
+class CommonModel extends Model {
+    protected function check_verify($code, $id = '') {
+        $verify = new \Think\Verify();
+        return $verify->check($code, $id);
+    }
+
+    protected function message($code = 0, $info = '', $url = '') {
+        return array(
+            'status' => $code,
+            'info'   => $info,
+            'url'    => $url
+        );
+    }
 
 }

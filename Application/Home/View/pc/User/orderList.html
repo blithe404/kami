@@ -1,0 +1,47 @@
+<layout name="Common/layout"/>
+<div id="wrap">
+    <div class="admin">
+        <div class="menu">
+            <h3>用户中心</h3>
+            <ul>
+                <php>
+                    if(ACTION_NAME == 'index') {
+                    $index_sel = 'class="sel"';
+                    } else if (ACTION_NAME == 'orderList') {
+                    $order_sel = 'class="sel"';
+                    }
+                </php>
+                <li><a href="{:U('User/index')}" {$index_sel}><span class="icoBg ico-1"></span>
+                    <p>个人中心</p>我的个人信息</a></li>
+                <li><a href="{:U('User/orderList')}" {$order_sel}><span class="icoBg ico-2"></span>
+                    <p>我的订单</p>查看我的订单信息</a></li>
+            </ul>
+        </div>
+        <div class="admin-wrap">
+            <div style="height:150px" class="admin-info"><img src="__PUBLIC__/home/imgs/image_default.jpg" width="109"
+                                                              height="109" class="fl">
+                <div class="fl" style="padding-left:10px;">
+                    <ul>
+                        <li class="li-h">欢迎您 <span class="orange">{$data.username}</span> 来到{$confs.site_name}用户中心</li>
+                        <li></li>
+                        <li class="li-h">上次登陆: IP {$data.ip} <php>echo date('Y-m-d H:i:s', $data['updatetime']);</php></li>
+                        <li></li>
+                        <li class="li-h"><a href="{:U('User/changePwd')}">[修改密码]</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="order-list">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" class="list-top">
+                    <tbody>
+                    <tr>
+                        <td align="center" width="50%">商品信息</td>
+                        <td align="center" width="10%">单价(元)</td>
+                        <td align="center" width="5%">数量</td>
+                        <td align="center" width="10%">实付款(元)</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,48 @@
+<layout name="Common/layout"/>
+<div class="pro-list">
+    <dl>
+        <dt>
+            <span class="title">商品查询列表</span>
+            <span class="grayD">所有分类: 共 <span class="orange">7</span> 件商品</span>
+        </dt>
+        <dd>
+            <ul>
+                <li class="li-top">
+                    <span class="img">
+                        <a href="javascript:void(0);">名称</a>
+                    </span>
+                    <span class="des">&nbsp;</span>
+                    <span class="num">
+                        <a href="javascript:void(0);" class="grayD">已售数量</a>
+                    </span>
+                    <span class="price">
+                        <a href="javascript:void(0);" class="grayD">销售价格</a>
+                    </span>
+                    <span class="control">&nbsp;</span>
+                </li>
+            </ul>
+            <ul class="pro-list-cont">
+                <li>
+                    <span class="img">
+                        <a href="{:U('Order/create?pro_id='.$item['id'])}" target="_blank">
+                            <img src="__PUBLIC__/home/imgs/shenda.jpg" width="100" height="100">
+                        </a>
+                    </span>
+                    <span class="des">
+                        <a href="{:U('Order/create?pro_id='.$item['id'])}" class="font16 fn-text-overflow">盛大一卡通 10元 卡密</a>
+                        <br>商品类型：卡密<br>
+                        所属分类：盛大
+                    </span>
+                    <span class="num">1834</span>
+                    <span class="price">
+                        <span class="font18 b red">10</span> 元<br>
+                        <span class="wrong">￥10</span>
+                    </span>
+                    <span class="control">
+                        <a href="{:U('Order/create?pro_id='.$item['id'])}" class="btnSumbit">立即购买</a>
+                    </span>
+                </li>
+            </ul>
+        </dd>
+    </dl>
+</div>

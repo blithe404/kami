@@ -1,39 +1,73 @@
 <layout name="Common/layout"/>
+<style>
+    #sub-btn {
+        width: 93px;
+        height: 28px;
+        background: url(/Public/home/imgs/button_bg_1.jpg) no-repeat;
+        cursor: pointer;
+        border: 0;
+        margin-top: 10px;
+        color: #fff;
+        font-size: 14px;
+        margin-left: 178px;
+    }
+</style>
 <div class="warp">
     <div class="person">
-        <dl>
-            <dt>请选择汇款账户</dt>
-            <dd>
-                <div style="height:45px;line-height:45px;">
-                    <div style="width:30%;text-align:center;display:inline-block">
-                        <input type="radio">
-                        中国工商银行
-                    </div>
-                    <div style="width:30%;text-align:center;display:inline-block;">谢老大</div>
-                    <div style="width:35%;text-align:center;display:inline-block;">66666666666666666666</div>
-                </div>
-                <div style="height:45px;line-height:45px;">
-                    <div style="width:30%;text-align:center;display:inline-block">
-                        <input type="radio">
-                        中国工商银行
-                    </div>
-                    <div style="width:30%;text-align:center;display:inline-block;">谢老大</div>
-                    <div style="width:35%;text-align:center;display:inline-block;">66666666666666666666</div>
-                </div>
-            </dd>
-        </dl>
-        <dl>
-            <dt>请填写汇款信息</dt>
-            <dd class="address">
-                <ul>
-                    <li>
-                        <span class="name"><span class="red">*</span>汇款金额：</span>
-                        <span class="fill">
-                            <input type="number"class="input_Single_1">
+        <form action="{:U()}" id="subForm" method="post">
+            <dl>
+                <dt>请选择汇款账户</dt>
+                <dd>
+                    <volist name="banks" id="bank">
+                        <div style="height:45px;line-height:45px;">
+                            <div style="width:30%;text-align:center;display:inline-block">
+                                <input type="radio" name="bank_id" value="{$bank.id}">
+                                {$bank.title}
+                            </div>
+                            <div style="width:30%;text-align:center;display:inline-block;">{$bank.name}</div>
+                            <div style="width:35%;text-align:center;display:inline-block;">{$bank.card}</div>
+                        </div>
+                    </volist>
+                </dd>
+            </dl>
+            <dl>
+                <dt>请填写汇款信息</dt>
+                <dd class="address">
+                    <ul>
+                        <li>
+                            <span class="name"><span class="red">*</span>汇款金额：</span>
+                            <span class="fill">
+                            <input type="number" id="money" name="money">
                         </span>
-                    </li>
-                </ul>
-            </dd>
-        </dl>
+                        </li>
+                        <li>
+                            <span class="name"><span class="red">*</span>汇款时间：</span>
+                            <span class="fill">
+                            <input type="datetime-local" id="paytime" name="paytime">
+                        </span>
+                        </li>
+                        <li>
+                            <span class="name">汇款备注信息：</span>
+                            <span class="fill">
+                            <textarea name="remark" id="remark" cols="50" rows="10"></textarea>
+                        </span>
+                        </li>
+                    </ul>
+                    <p><input type="submit" id="sub-btn" post-form="#subForm" value="提交"></p>
+                </dd>
+            </dl>
+        </form>
     </div>
 </div>
+<script>
+    $('#sub-btn').ajaxPost(function (res) {
+        console.log(res);
+        if (res.status == -10) {
+            window.location.href = res.url;
+        } else if (res.status == 0) {
+            alert(res.info);
+        } else {
+            window.location.href = res.url;
+        }
+    })
+</script>

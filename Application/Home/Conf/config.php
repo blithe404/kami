@@ -1,4 +1,7 @@
 <?php
 return array(
-	//'配置项'=>'配置值'
+	'INDEX_URL' => 'Index/index',
+    'LOGIN_URL' => 'User/login',
+
+    'URL_MODEL'  => 2,
 );

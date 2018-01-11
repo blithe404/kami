@@ -1,0 +1,55 @@
+<layout name="Common/layout"/>
+<div id="wrap">
+    <div class="password">
+        <form action="{:U()}" id="subForm" method="post">
+        <h3>修改密码</h3>
+        <dl class="base">
+            <dt>请输入以下资料</dt>
+            <dd>
+                <ul>
+
+                    <li>
+                        <span class="name"><label>原密码：</label></span>
+                        <span class="fill"><input class="password required" type="password" name="old_pwd"
+                                                  id="old_pwd" style="height:30px;width:200px;padding:0px;">
+							</span></li>
+
+                    <li>
+                        <span class="name"><label>新密码：</label></span>
+                        <span class="fill">
+                            <input class="password required" type="password" name="new_pwd" id="new_pwd" style="height:30px;width:200px;padding:0px;">
+                        </span>
+                    </li>
+                    <li>
+                        <span class="name"><label>确认密码：</label></span>
+                        <span class="fill">
+                            <input type="password" class="password required" name="verify_pwd" id="verify_pwd" style="height:30px;width:200px;padding:0px;">
+                        </span>
+                    </li>
+                </ul>
+            </dd>
+        </dl>
+        <dl class="mark">
+            <dd>
+                <ul>
+                    <li>
+                        <span class="name">&nbsp;</span>
+                        <span class="fill"><input type="submit" id="sub-btn" post-form="#subForm" value="提交"><span id="resultError"></span></span>
+                    </li>
+                </ul>
+            </dd>
+        </dl>
+        </form>
+    </div>
+</div>
+<script>
+    $('#sub-btn').ajaxPost(function (res) {
+        if(res.status == -10) {
+            window.location.href = res.url;
+        } else if (res.status == 0) {
+            alert(res.info);
+        } else {
+            window.location.href = res.url;
+        }
+    })
+</script>

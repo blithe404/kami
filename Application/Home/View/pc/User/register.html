@@ -1,0 +1,85 @@
+<layout name="Common/layout"/>
+<div id="wrap">
+    <div class="reg">
+        <h3>用户注册<span style="color:red;font-size:15px;" id="fail"></span></h3>
+        <div class="link">如果您已有账号，请 <a href="{:U('User/login')}">登录</a></div>
+        <form action="{:U('User/register')}" method="post" id="subForm" style="width:800px;">
+            <ul>
+                <li>
+                    <span class="name">用户名</span>
+                    <span class="fill">
+                        <input type="text" name="username" id="username">
+                    </span>
+                </li>
+                <li>
+                    <span class="name">电子邮箱</span>
+                    <span class="fill">
+                        <input type="text" name="email" id="email">
+                    </span>
+                </li>
+                <li>
+                    <span class="name">真实姓名</span>
+                    <span class="fill">
+                        <input type="text" name="realname" id="realname">
+                    </span>
+                </li>
+                <li>
+                    <span class="name">身份证</span>
+                    <span class="fill">
+                        <input type="text" name="idcard" id="idcard" maxlength="18">
+                    </span>
+                </li>
+                <li>
+                    <span class="name">密码</span>
+                    <span class="fill">
+                        <input type="password" name="password" id="password">
+                    </span>
+                </li>
+                <li>
+                    <span class="name">确认密码</span>
+                    <span class="fill">
+                        <input type="password" name="verify_password" id="verify_password">
+                    </span>
+                </li>
+
+
+                <li>
+                    <span class="name">验 证 码：</span>
+                    <span class="fill">
+                        <input type="text" name="verify_code" style="width:50px;vertical-align:top;" id="verify_code">
+                        <img src="{:U('User/imgVerify')}" id="changeCode" onclick="this.src= this.src +'?' + Math.random()" title="点击换一张" style="cursor:pointer" width="85" height="31" alt="">
+                    </span>
+                </li>
+
+
+                <li>
+                    <span class="fill">
+                        <input type="checkbox" id="agreeprotocol" checked name="protocol">
+                        我同意<a href="#" target="_blank">《商城用户服务协议》</a>
+                    </span>
+                </li>
+                <li>
+                    <span class="name">&nbsp;</span>
+                    <span class="fill"><input type="submit" value="注册" id="register_btn" post-form="#subForm"></span>
+                </li>
+
+            </ul>
+        </form>
+    </div>
+</div>
+<script>
+    $(function () {
+        $('#register_btn').ajaxPost(function (res) {
+            if(res.status == -1) {
+                alert(res.info);
+                var img_code = $('#changeCode');
+                var old_src = img_code.attr('src');
+                img_code.attr('src', old_src + '?code=' + Math.random());
+            } else if (res.status == 0) {
+                alert(res.info);
+            } else {
+                window.location.href = res.url;
+            }
+        });
+    });
+</script>

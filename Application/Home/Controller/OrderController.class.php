@@ -9,6 +9,11 @@
 namespace Home\Controller;
 
 
-class OrderController {
+class OrderController extends CommonController {
 
+    public function create() {
+
+        $this->assign('meta_title', '订单确认');
+        $this->display();
+    }
 }

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="__PUBLIC__/home/css/style.css">
 
     <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="__PUBLIC__/home/js/common.js"></script>
 </head>
 <body>
 <div id="header">
@@ -17,13 +18,18 @@
         <div class="contain">
             <span class="fr">
                 <a href="{:U('User/index')}">会员中心</a> |
-                <a href="{:U('User/pay')}">充值</a> |
-                <a href="javascript:void(0);">站点余额：0元</a>
+                <a href="{:U('PayOrder/create')}">充值</a> |
+                <a href="javascript:void(0);">站点余额：{$Think.const.UBLANCE}元</a>
             </span>
             <div id="jl_usrBox">
-                你好，欢迎来到一直游点卡商城！
-                <a href="{:U('User/register')}">注册</a> |
-                <a href="{:U('User/login')}">登录</a>
+                你好，欢迎来到{$confs.site_name}！
+                <empty name="Think.const.UID">
+                    <a href="{:U('User/register')}">注册</a> |
+                    <a href="{:U('User/login')}">登录</a>
+                <else />
+                    <a href="javascript:void(0)">{$Think.const.UNAME}</a>
+                    <a href="{:U('User/logout')}">退出</a>
+                </empty>
             </div>
         </div>
     </div>

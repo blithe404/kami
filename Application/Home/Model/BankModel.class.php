@@ -9,6 +9,8 @@
 namespace Home\Model;
 
 
-class BankModel {
-
+class BankModel extends CommonModel {
+    public function getBanks() {
+        return $this->select();
+    }
 }

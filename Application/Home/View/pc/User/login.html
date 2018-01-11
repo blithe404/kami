@@ -1,7 +1,7 @@
 <layout name="Common/layout"/>
 <div id="wrap">
     <div class="login">
-        <form action="{:U('login')}" method="post">
+        <form action="{:U('login')}" method="post" id="subForm">
             <ul>
                 <li style="width:500px">
                     <div>
@@ -16,19 +16,19 @@
                 </li>
                 <li>
                     <div>
-                        <input type="text" name="img_code" style="width:50px;background-image:none;vertical-align:top;" id="validatecode"
+                        <input type="text" name="verify_code" style="width:50px;background-image:none;vertical-align:top;" id="validatecode"
                                placeholder="验证码">
-                        <img src="{:U('User/imgVerify')}" id="changeCode" onclick="this.src='code?' + Math.random()"
+                        <img src="{:U('User/imgVerify')}" id="changeCode" onclick="this.src= this.src +'?' + Math.random()"
                              title="点击换一张" style="cursor:pointer" width="100" height="33" alt="">
                     </div>
                 </li>
-                <li style="width:282px">
-                    <span class="fr">
-                        <a href="{:U('findPwd')}">忘记密码?</a>
-                    </span>
-                </li>
+                <!--<li style="width:282px">-->
+                    <!--<span class="fr">-->
+                        <!--<a href="{:U('findPwd')}">忘记密码?</a>-->
+                    <!--</span>-->
+                <!--</li>-->
                 <li>
-                    <input type="submit" name="Submit2" value="登录">
+                    <input type="submit" name="Submit2" value="登录" id="sub-btn" post-form="#subForm">
                 </li>
             </ul>
         </form>
@@ -39,3 +39,17 @@
         <br clear="all">
     </div>
 </div>
+<script>
+    $('#sub-btn').ajaxPost(function (res) {
+        if(res.status == -1) {
+            alert(res.info);
+            var img_code = $('#changeCode');
+            var old_src = img_code.attr('src');
+            img_code.attr('src', old_src + '?code=' + Math.random());
+        } else if (res.status == 0) {
+            alert(res.info);
+        } else {
+            window.location.href = res.url;
+        }
+    })
+</script>

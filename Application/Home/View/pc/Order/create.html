@@ -1,0 +1,66 @@
+<layout name="Common/layout"/>
+<form action="{:U()}" id="subForm" method="post">
+    <div id="wrap">
+        <div class="warmAtion"><img src="__PUBLIC__/home/imgs/icon_4.jpg">温馨提示：请认真核对下单信息。</div>
+        <div class="person">
+            <dl>
+                <dt>确认下单信息</dt>
+                <dd class="info">
+                    <div class="des">
+                        <p>商品名称: <span class="blue" id="productName" name="productName">盛大直充</span></p>
+                        <p>商品类型: 直充</p>
+                        <p>单价: <font id="salePrice" name="salePrice">1</font>元</p>
+                    </div>
+                    <div class="count">
+                        应付金额:
+                        <span class="orange">
+                            ￥<span class="font24" id="salePriceTotal">1</span>
+                        </span>
+                    </div>
+                    <div class="num">数量：
+                        <span class="numControl">
+                            <input type="text" name="number" id="number" class="number" value="1">
+                            <img class="up_img" src="__PUBLIC__/home/imgs/icon_up.jpg" style="position:absolute;top:0;right:0;">
+                            <img class="down_img" src="__PUBLIC__/home/imgs/icon_down.jpg" style="position:absolute;bottom:0;right:0;">
+                        </span>
+                    </div>
+                    <br clear="all">
+                </dd>
+            </dl>
+            <div class="doSumbie">
+                <input type="submit" value="提交订单" class="btnSumbit" id="sub-btn" post-form="#subForm">
+            </div>
+        </div>
+    </div>
+</form>
+<script>
+    var price = $('#salePrice').text().trim() - 0;
+
+    $('.up_img').click(function () {
+        var old_num = $('#number').val() - 0;
+        var new_num = old_num + 1;
+        $('#number').val(new_num);
+        $('#salePriceTotal').text(new_num * price);
+    });
+    $('.down_img').click(function () {
+        var old_num = $('#number').val() - 0;
+        var new_num = old_num - 1;
+        if(new_num == 0) {
+            new_num = 1;
+        }
+        $('#number').val(new_num);
+        $('#salePriceTotal').text(new_num * price);
+    });
+
+    $('.number').blur(function () {
+        var val = $(this).val();
+        if(!isInteger(val)) {
+            $(this).val(1);
+            $('#salePriceTotal').text(price);
+        }
+    });
+
+    function isInteger(obj) {
+        return obj%1 === 0
+    }
+</script>
