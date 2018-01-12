@@ -87,7 +87,9 @@ class UserController extends CommonController {
     public function orderList() {
         $User = D('User');
         $data = $User->getData(UID);
+        $orders = M('Order')->where(array('uid'=>UID))->order('datetime desc')->select();
 
+        $this->assign('orders', $orders);
         $this->assign('data', $data);
         $this->assign('meta_title', '我的订单');
         $this->display();

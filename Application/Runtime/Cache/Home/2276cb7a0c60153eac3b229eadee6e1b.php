@@ -18,8 +18,8 @@
         <div class="contain">
             <span class="fr">
                 <a href="<?php echo U('User/index');?>">会员中心</a> |
-                <a href="<?php echo U('PayOrder/create');?>">充值</a> |
-                <a href="javascript:void(0);">站点余额：<?php echo (UBLANCE); ?>元</a>
+                <a href="<?php echo U('PayOrder/create');?>">充值</a>
+                <?php if(!empty(UID)): ?>| <a href="javascript:void(0);">站点余额：<?php echo (UBLANCE); ?>元</a><?php endif; ?>
             </span>
             <div id="jl_usrBox">
                 你好，欢迎来到<?php echo ($confs["site_name"]); ?>！
@@ -39,14 +39,9 @@
         <div class="search">
             <div class="searArea">
                 <form action="<?php echo U('Product/lists');?>" method="get">
-                    <input type="text" name="keyword" placeholder="热门" value="">
+                    <input type="text" name="keyword" placeholder="" value="">
                     <input type="submit" value="搜索">
                 </form>
-            </div>
-            <div gishop="word" id="adVt1">
-                <p>
-                    热搜： <a href="<?php echo U('Product/lists/cat=盛大');?>">盛大</a>
-                </p>
             </div>
         </div>
     </div>
@@ -75,26 +70,26 @@
                 </li>
             </ul>
             <ul class="pro-list-cont">
-                <li>
+                <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$item): $mod = ($i % 2 );++$i;?><li>
                     <span class="img">
-                        <a href="<?php echo U('Order/create?pro_id='.$item['id']);?>" target="_blank">
-                            <img src="/Public/home/imgs/shenda.jpg" width="100" height="100">
+                        <a href="<?php echo U('Order/create?pid='.$item['id']);?>" target="_blank">
+                            <img src="<?php echo ($item["img"]); ?>" width="100" height="100">
                         </a>
                     </span>
-                    <span class="des">
-                        <a href="<?php echo U('Order/create?pro_id='.$item['id']);?>" class="font16 fn-text-overflow">盛大一卡通 10元 卡密</a>
+                        <span class="des">
+                        <a href="<?php echo U('Order/create?pid='.$item['id']);?>" class="font16 fn-text-overflow"><?php echo ($item["name"]); ?></a>
                         <br>商品类型：卡密<br>
-                        所属分类：盛大
+                        所属分类：<?php echo ($item["cname"]); ?>
                     </span>
-                    <span class="num">1834</span>
-                    <span class="price">
-                        <span class="font18 b red">10</span> 元<br>
-                        <span class="wrong">￥10</span>
+                        <span class="num"><?php echo ($item["sale"]); ?></span>
+                        <span class="price">
+                        <span class="font18 b red"><?php echo ($item["price"]); ?></span> 元<br>
+                        <span class="wrong">￥<?php echo ($item["price"]); ?></span>
                     </span>
-                    <span class="control">
-                        <a href="<?php echo U('Order/create?pro_id='.$item['id']);?>" class="btnSumbit">立即购买</a>
+                        <span class="control">
+                        <a href="<?php echo U('Order/create?pid='.$item['id']);?>" class="btnSumbit">立即购买</a>
                     </span>
-                </li>
+                    </li><?php endforeach; endif; else: echo "" ;endif; ?>
             </ul>
         </dd>
     </dl>

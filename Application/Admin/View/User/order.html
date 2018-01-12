@@ -1,0 +1,47 @@
+<layout name="Common/admin_layout"/>
+<blockquote class="layui-elem-quote">
+    <div class="layui-inline">
+        <div class="layui-input-inline">
+            <input value="" placeholder="请输入{$keyword}" class="layui-input search_input" type="text">
+        </div>
+        <a class="layui-btn search_btn">查询</a>
+    </div>
+</blockquote>
+<table id="list" lay-filter="list"></table>
+
+<script>
+    layui.use(['table', 'util', 'jquery', 'layer'], function () {
+        var table = layui.table;
+        var $ = layui.jquery;
+        var layer = layui.layer;
+        var url = "{:U('order_lists')}";
+
+        var list = table.render({
+            elem: '#list',
+            url: url,
+            page: true,
+            cols: [[
+                {field: 'username', title: '用户名', align: 'center', fixed: 'left'},
+                {field: 'pname', title: '商品名称', align: 'center'},
+                {field: 'price', title: '单价', align: 'center'},
+                {field: 'number', title: '数量', align: 'center'},
+                {field: 'total_price', title: '付款金额', align: 'center'},
+                {field: 'datetime', title: '创建日期', align: 'center', templet: '#datetimeTpl'}
+            ]],
+        });
+
+        $('.search_btn').click(function () {
+            var keyword = $('.search_input').val();
+            var url = "{:U('order_search')}";
+            list.reload({
+                where: {
+                    keyword: keyword
+                },
+                url: url
+            });
+        });
+    })
+</script>
+<script type="text/html" id="datetimeTpl">
+    {{ layui.util.toDateString(parseInt(d.datetime)*1000, 'yyyy-MM-dd HH:mm:ss') }}
+</script>

@@ -22,26 +22,28 @@
                 </li>
             </ul>
             <ul class="pro-list-cont">
-                <li>
+                <volist name="list" id="item">
+                    <li>
                     <span class="img">
-                        <a href="{:U('Order/create?pro_id='.$item['id'])}" target="_blank">
-                            <img src="__PUBLIC__/home/imgs/shenda.jpg" width="100" height="100">
+                        <a href="{:U('Order/create?pid='.$item['id'])}" target="_blank">
+                            <img src="{$item.img}" width="100" height="100">
                         </a>
                     </span>
-                    <span class="des">
-                        <a href="{:U('Order/create?pro_id='.$item['id'])}" class="font16 fn-text-overflow">盛大一卡通 10元 卡密</a>
+                        <span class="des">
+                        <a href="{:U('Order/create?pid='.$item['id'])}" class="font16 fn-text-overflow">{$item.name}</a>
                         <br>商品类型：卡密<br>
-                        所属分类：盛大
+                        所属分类：{$item.cname}
                     </span>
-                    <span class="num">1834</span>
-                    <span class="price">
-                        <span class="font18 b red">10</span> 元<br>
-                        <span class="wrong">￥10</span>
+                        <span class="num">{$item.sale}</span>
+                        <span class="price">
+                        <span class="font18 b red">{$item.price}</span> 元<br>
+                        <span class="wrong">￥{$item.price}</span>
                     </span>
-                    <span class="control">
-                        <a href="{:U('Order/create?pro_id='.$item['id'])}" class="btnSumbit">立即购买</a>
+                        <span class="control">
+                        <a href="{:U('Order/create?pid='.$item['id'])}" class="btnSumbit">立即购买</a>
                     </span>
-                </li>
+                    </li>
+                </volist>
             </ul>
         </dd>
     </dl>

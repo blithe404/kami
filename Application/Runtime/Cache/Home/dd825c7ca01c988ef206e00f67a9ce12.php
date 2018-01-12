@@ -18,8 +18,8 @@
         <div class="contain">
             <span class="fr">
                 <a href="<?php echo U('User/index');?>">会员中心</a> |
-                <a href="<?php echo U('PayOrder/create');?>">充值</a> |
-                <a href="javascript:void(0);">站点余额：<?php echo (UBLANCE); ?>元</a>
+                <a href="<?php echo U('PayOrder/create');?>">充值</a>
+                <?php if(!empty(UID)): ?>| <a href="javascript:void(0);">站点余额：<?php echo (UBLANCE); ?>元</a><?php endif; ?>
             </span>
             <div id="jl_usrBox">
                 你好，欢迎来到<?php echo ($confs["site_name"]); ?>！
@@ -39,14 +39,9 @@
         <div class="search">
             <div class="searArea">
                 <form action="<?php echo U('Product/lists');?>" method="get">
-                    <input type="text" name="keyword" placeholder="热门" value="">
+                    <input type="text" name="keyword" placeholder="" value="">
                     <input type="submit" value="搜索">
                 </form>
-            </div>
-            <div gishop="word" id="adVt1">
-                <p>
-                    热搜： <a href="<?php echo U('Product/lists/cat=盛大');?>">盛大</a>
-                </p>
             </div>
         </div>
     </div>
@@ -60,27 +55,30 @@
                 <dt>确认下单信息</dt>
                 <dd class="info">
                     <div class="des">
-                        <p>商品名称: <span class="blue" id="productName" name="productName">盛大直充</span></p>
-                        <p>商品类型: 直充</p>
-                        <p>单价: <font id="salePrice" name="salePrice">1</font>元</p>
+                        <p>商品名称: <span class="blue" id="productName" name="productName"><?php echo ($data["name"]); ?></span></p>
+                        <p>商品类型: 卡密</p>
+                        <p>单价: <font id="salePrice" name="salePrice"><?php echo ($data["price"]); ?></font>元</p>
                     </div>
                     <div class="count">
                         应付金额:
                         <span class="orange">
-                            ￥<span class="font24" id="salePriceTotal">1</span>
+                            ￥<span class="font24" id="salePriceTotal"><?php echo ($data["price"]); ?></span>
                         </span>
                     </div>
                     <div class="num">数量：
                         <span class="numControl">
                             <input type="text" name="number" id="number" class="number" value="1">
-                            <img class="up_img" src="/Public/home/imgs/icon_up.jpg" style="position:absolute;top:0;right:0;">
-                            <img class="down_img" src="/Public/home/imgs/icon_down.jpg" style="position:absolute;bottom:0;right:0;">
+                            <img class="up_img" src="/Public/home/imgs/icon_up.jpg"
+                                 style="position:absolute;top:0;right:0;">
+                            <img class="down_img" src="/Public/home/imgs/icon_down.jpg"
+                                 style="position:absolute;bottom:0;right:0;">
                         </span>
                     </div>
                     <br clear="all">
                 </dd>
             </dl>
             <div class="doSumbie">
+                <input type="hidden" name="pid" value="<?php echo ($data["id"]); ?>">
                 <input type="submit" value="提交订单" class="btnSumbit" id="sub-btn" post-form="#subForm">
             </div>
         </div>
@@ -98,7 +96,7 @@
     $('.down_img').click(function () {
         var old_num = $('#number').val() - 0;
         var new_num = old_num - 1;
-        if(new_num == 0) {
+        if (new_num == 0) {
             new_num = 1;
         }
         $('#number').val(new_num);
@@ -107,14 +105,27 @@
 
     $('.number').blur(function () {
         var val = $(this).val();
-        if(!isInteger(val)) {
+        if (!isInteger(val)) {
             $(this).val(1);
             $('#salePriceTotal').text(price);
         }
     });
 
+    $('#sub-btn').ajaxPost(function (res) {
+        if (res.status == -10) {
+            window.location.href = res.url;
+        } else if (res.status == 0) {
+            alert(res.info);
+            if (res.url) {
+                window.location.href = res.url;
+            }
+        } else {
+            window.location.href = res.url;
+        }
+    });
+
     function isInteger(obj) {
-        return obj%1 === 0
+        return obj % 1 === 0
     }
 </script>
 <div id="footer">

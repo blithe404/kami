@@ -18,8 +18,8 @@
         <div class="contain">
             <span class="fr">
                 <a href="<?php echo U('User/index');?>">会员中心</a> |
-                <a href="<?php echo U('User/pay');?>">充值</a> |
-                <a href="javascript:void(0);">站点余额：0元</a>
+                <a href="<?php echo U('PayOrder/create');?>">充值</a>
+                <?php if(!empty(UID)): ?>| <a href="javascript:void(0);">站点余额：<?php echo (UBLANCE); ?>元</a><?php endif; ?>
             </span>
             <div id="jl_usrBox">
                 你好，欢迎来到<?php echo ($confs["site_name"]); ?>！
@@ -39,14 +39,9 @@
         <div class="search">
             <div class="searArea">
                 <form action="<?php echo U('Product/lists');?>" method="get">
-                    <input type="text" name="keyword" placeholder="热门" value="">
+                    <input type="text" name="keyword" placeholder="" value="">
                     <input type="submit" value="搜索">
                 </form>
-            </div>
-            <div gishop="word" id="adVt1">
-                <p>
-                    热搜： <a href="<?php echo U('Product/lists/cat=盛大');?>">盛大</a>
-                </p>
             </div>
         </div>
     </div>
@@ -86,6 +81,16 @@
                         <td align="center" width="5%">数量</td>
                         <td align="center" width="10%">实付款(元)</td>
                     </tr>
+                    </tbody>
+                </table>
+                <table width="100%" border="0" cellpadding="0" cellspacing="0" class="list-table">
+                    <tbody>
+                    <?php if(is_array($orders)): $i = 0; $__LIST__ = $orders;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$item): $mod = ($i % 2 );++$i;?><tr>
+                            <td align="center" width="50%"><?php echo ($item["pname"]); ?></td>
+                            <td align="center" width="10%"><?php echo ($item["price"]); ?></td>
+                            <td align="center" width="5%"><?php echo ($item["number"]); ?></td>
+                            <td align="center" width="10%"><?php echo ($item["total_price"]); ?></td>
+                        </tr><?php endforeach; endif; else: echo "" ;endif; ?>
                     </tbody>
                 </table>
             </div>

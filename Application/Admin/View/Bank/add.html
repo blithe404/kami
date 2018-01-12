@@ -1,0 +1,49 @@
+<layout name="Common/admin_layout" />
+<form action="{:U()}" method="post" class="layui-form" style="padding:20px;">
+    <div class="layui-form-item">
+        <label class="layui-form-label">姓名</label>
+        <div class="layui-input-block">
+            <input type="text" name="name" value="{$data.name}" lay-verify="required" autocomplete="off" class="layui-input">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">所属银行</label>
+        <div class="layui-input-block">
+            <input type="text" name="title" value="{$data.title}" lay-verify="required" autocomplete="off" class="layui-input">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">卡号</label>
+        <div class="layui-input-block">
+            <input type="text" name="card" value="{$data.card}" lay-verify="required|number" autocomplete="off" class="layui-input">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <div class="layui-input-block">
+            <input type="hidden" id="id" name="id" value="{$data.id}">
+            <button class="layui-btn" lay-submit lay-filter="*" post-form=".layui-form">立即提交</button>
+            <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+        </div>
+    </div>
+</form>
+<script>
+    layui.use(['form', 'jquery'], function () {
+        var form = layui.form;
+        var $ = layui.jquery;
+
+        form.on('submit(*)', function (data) {
+            var post = data.field;
+            var url = data.form.action;
+            $.post(url, post, function (res) {
+                if(res.status == 0) {
+                    layer.msg(res.info);
+                } else {
+                    layer.msg(res.info, {time:1000}, function () {
+                        layer.closeAll();
+                    });
+                }
+            });
+            return false;
+        })
+    });
+</script>

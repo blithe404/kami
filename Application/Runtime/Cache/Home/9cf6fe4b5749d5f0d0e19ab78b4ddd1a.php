@@ -18,8 +18,8 @@
         <div class="contain">
             <span class="fr">
                 <a href="<?php echo U('User/index');?>">会员中心</a> |
-                <a href="<?php echo U('PayOrder/create');?>">充值</a> |
-                <a href="javascript:void(0);">站点余额：<?php echo (UBLANCE); ?>元</a>
+                <a href="<?php echo U('PayOrder/create');?>">充值</a>
+                <?php if(!empty(UID)): ?>| <a href="javascript:void(0);">站点余额：<?php echo (UBLANCE); ?>元</a><?php endif; ?>
             </span>
             <div id="jl_usrBox">
                 你好，欢迎来到<?php echo ($confs["site_name"]); ?>！
@@ -39,93 +39,37 @@
         <div class="search">
             <div class="searArea">
                 <form action="<?php echo U('Product/lists');?>" method="get">
-                    <input type="text" name="keyword" placeholder="热门" value="">
+                    <input type="text" name="keyword" placeholder="" value="">
                     <input type="submit" value="搜索">
                 </form>
-            </div>
-            <div gishop="word" id="adVt1">
-                <p>
-                    热搜： <a href="<?php echo U('Product/lists/cat=盛大');?>">盛大</a>
-                </p>
             </div>
         </div>
     </div>
 </div>
 
+<style>
+    .index-sort > ul > li:last-child {
+        border: 0;
+    }
+</style>
 <div class="nav">
     <div class="contain">
         <div class="title">全部商品分类</div>
         <ul gishop="word">
             <li><a href="/">首页</a></li>
-            <li><a href="/">Q币</a></li>
-            <li><a href="/">话费</a></li>
-            <li><a href="/">盛大</a></li>
+            <?php if(is_array($category)): $i = 0; $__LIST__ = $category;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$item): $mod = ($i % 2 );++$i;?><li><a href="<?php echo U('Product/lists?cid='.$item['id']);?>"><?php echo ($item["name"]); ?></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
         </ul>
     </div>
 </div>
 <div id="wrap">
     <div class="index-sort">
         <ul>
-            <li gishop="category">
-                <h5>热售商品</h5>
-                <a href="/" class="gray">
-                    <span>盛付通</span>
-                </a>
-                <a href="/" class="gray">
-                    <span>盛付通</span>
-                </a>
-                <a href="/" class="gray">
-                    <span>盛付通</span>
-                </a>
-            </li>
-            <li gishop="category">
-                <h5>热售商品</h5>
-                <a href="/" class="gray">
-                    <span>盛付通</span>
-                </a>
-                <a href="/" class="gray">
-                    <span>盛付通</span>
-                </a>
-                <a href="/" class="gray">
-                    <span>盛付通</span>
-                </a>
-            </li>
-            <li gishop="category">
-                <h5>热售商品</h5>
-                <a href="/" class="gray">
-                    <span>盛付通</span>
-                </a>
-                <a href="/" class="gray">
-                    <span>盛付通</span>
-                </a>
-                <a href="/" class="gray">
-                    <span>盛付通</span>
-                </a>
-            </li>
-            <li gishop="category">
-                <h5>热售商品</h5>
-                <a href="/" class="gray">
-                    <span>盛付通</span>
-                </a>
-                <a href="/" class="gray">
-                    <span>盛付通</span>
-                </a>
-                <a href="/" class="gray">
-                    <span>盛付通</span>
-                </a>
-            </li>
-            <li class="category liNone">
-                <h5>热售商品</h5>
-                <a href="/" class="gray">
-                    <span>盛付通</span>
-                </a>
-                <a href="/" class="gray">
-                    <span>盛付通</span>
-                </a>
-                <a href="/" class="gray">
-                    <span>盛付通</span>
-                </a>
-            </li>
+            <?php if(is_array($category_product)): $i = 0; $__LIST__ = $category_product;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$list): $mod = ($i % 2 );++$i;?><li gishop="category">
+                    <h5><?php echo ($key); ?></h5>
+                    <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$item): $mod = ($i % 2 );++$i;?><a href="<?php echo U('Order/create?pid='.$item['id']);?>" class="gray">
+                            <span><?php echo ($item["name"]); ?></span>
+                        </a><?php endforeach; endif; else: echo "" ;endif; ?>
+                </li><?php endforeach; endif; else: echo "" ;endif; ?>
         </ul>
     </div>
     <div class="index-show">

@@ -18,8 +18,8 @@
         <div class="contain">
             <span class="fr">
                 <a href="<?php echo U('User/index');?>">会员中心</a> |
-                <a href="<?php echo U('PayOrder/create');?>">充值</a> |
-                <a href="javascript:void(0);">站点余额：<?php echo (UBLANCE); ?>元</a>
+                <a href="<?php echo U('PayOrder/create');?>">充值</a>
+                <?php if(!empty(UID)): ?>| <a href="javascript:void(0);">站点余额：<?php echo (UBLANCE); ?>元</a><?php endif; ?>
             </span>
             <div id="jl_usrBox">
                 你好，欢迎来到<?php echo ($confs["site_name"]); ?>！
@@ -39,14 +39,9 @@
         <div class="search">
             <div class="searArea">
                 <form action="<?php echo U('Product/lists');?>" method="get">
-                    <input type="text" name="keyword" placeholder="热门" value="">
+                    <input type="text" name="keyword" placeholder="" value="">
                     <input type="submit" value="搜索">
                 </form>
-            </div>
-            <div gishop="word" id="adVt1">
-                <p>
-                    热搜： <a href="<?php echo U('Product/lists/cat=盛大');?>">盛大</a>
-                </p>
             </div>
         </div>
     </div>

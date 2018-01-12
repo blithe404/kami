@@ -1,0 +1,12 @@
+<?php if(!IS_AJAX){ ?>
+<include file="Common/admin_header"/>
+<include file="sidebar"/>
+<div class="layui-body">
+    <div class="layui-main" style="padding:20px;">
+        <?php } ?>
+        {__CONTENT__}
+        <?php if(!IS_AJAX){ ?>
+    </div>
+</div>
+<include file="Common/admin_footer"/>
+<?php } ?>

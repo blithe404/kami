@@ -1,78 +1,33 @@
 <layout name="Common/layout"/>
+<style>
+    .index-sort > ul > li:last-child {
+        border: 0;
+    }
+</style>
 <div class="nav">
     <div class="contain">
         <div class="title">全部商品分类</div>
         <ul gishop="word">
             <li><a href="/">首页</a></li>
-            <li><a href="/">Q币</a></li>
-            <li><a href="/">话费</a></li>
-            <li><a href="/">盛大</a></li>
+            <volist name="category" id="item">
+                <li><a href="{:U('Product/lists?cid='.$item['id'])}">{$item.name}</a></li>
+            </volist>
         </ul>
     </div>
 </div>
 <div id="wrap">
     <div class="index-sort">
         <ul>
-            <li gishop="category">
-                <h5>热售商品</h5>
-                <a href="/" class="gray">
-                    <span>盛付通</span>
-                </a>
-                <a href="/" class="gray">
-                    <span>盛付通</span>
-                </a>
-                <a href="/" class="gray">
-                    <span>盛付通</span>
-                </a>
-            </li>
-            <li gishop="category">
-                <h5>热售商品</h5>
-                <a href="/" class="gray">
-                    <span>盛付通</span>
-                </a>
-                <a href="/" class="gray">
-                    <span>盛付通</span>
-                </a>
-                <a href="/" class="gray">
-                    <span>盛付通</span>
-                </a>
-            </li>
-            <li gishop="category">
-                <h5>热售商品</h5>
-                <a href="/" class="gray">
-                    <span>盛付通</span>
-                </a>
-                <a href="/" class="gray">
-                    <span>盛付通</span>
-                </a>
-                <a href="/" class="gray">
-                    <span>盛付通</span>
-                </a>
-            </li>
-            <li gishop="category">
-                <h5>热售商品</h5>
-                <a href="/" class="gray">
-                    <span>盛付通</span>
-                </a>
-                <a href="/" class="gray">
-                    <span>盛付通</span>
-                </a>
-                <a href="/" class="gray">
-                    <span>盛付通</span>
-                </a>
-            </li>
-            <li class="category liNone">
-                <h5>热售商品</h5>
-                <a href="/" class="gray">
-                    <span>盛付通</span>
-                </a>
-                <a href="/" class="gray">
-                    <span>盛付通</span>
-                </a>
-                <a href="/" class="gray">
-                    <span>盛付通</span>
-                </a>
-            </li>
+            <volist name="category_product" id="list">
+                <li gishop="category">
+                    <h5>{$key}</h5>
+                    <volist name="list" id="item">
+                        <a href="{:U('Order/create?pid='.$item['id'])}" class="gray">
+                            <span>{$item.name}</span>
+                        </a>
+                    </volist>
+                </li>
+            </volist>
         </ul>
     </div>
     <div class="index-show">
