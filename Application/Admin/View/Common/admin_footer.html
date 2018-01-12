@@ -6,7 +6,6 @@
 <script>
     layui.use(['element', 'layer'], function () {
         var element = layui.element;
-        var layer = layui.layer;
         var $ = layui.jquery;
         element.on('nav(menu-nav)', function (elem) {
             var url = $(elem).attr('data-url');
@@ -17,6 +16,14 @@
         });
         element.on('nav(admin-nav)', function (elem) {
             var url = $(elem).attr('data-url');
+            var data = {};
+            $.get(url, data, function (res) {
+                if(res.url) {
+                    window.location.href = res.url;
+                } else {
+                    $('.layui-main').html(res);
+                }
+            });
         });
     });
 </script>

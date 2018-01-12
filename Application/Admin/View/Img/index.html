@@ -1,0 +1,94 @@
+<layout name="Common/admin_layout"/>
+<style>
+    .logo-height {
+        height: 102px;
+    }
+    .logo-width {
+        width: 251px;
+    }
+    .flex {
+        display: flex;
+    }
+    .flex-1 {
+        flex: 1;
+    }
+    .pointer {
+        cursor: pointer;
+    }
+    .left-height {
+        height: 449px;
+    }
+    .mgl-251 {
+        margin-left: 251px;
+    }
+    .banner-height {
+        height: 312px;
+    }
+    .banner-width {
+        width: 752px;
+    }
+    .img-width {
+        width: 185px;
+    }
+    .img-height {
+        height: 136px;
+    }
+    .img-mgr {
+        margin-right: 0px;
+    }
+</style>
+<blockquote class="layui-elem-quote">
+    <p>点击图片上传</p>
+</blockquote>
+<div class="flex">
+    <div>
+        <img src="{$img['logo']['path']}" key="logo" class="logo-height logo-width pointer logo">
+    </div>
+    <div class="layui-bg-green banner-width"></div>
+</div>
+<div class="left-height">
+    <div class="flex banner-height">
+        <div class="layui-bg-green left-height logo-width"></div>
+        <div>
+            <img src="{$img['banner']['path']}" key="banner" class="banner-width banner-height pointer img">
+        </div>
+    </div>
+    <div class="mgl-251">
+        <img src="{$img['img1']['path']}" key="img1" class="pointer img-mgr img-width img-height img">
+        <img src="{$img['img2']['path']}" key="img2" class="pointer img-mgr img-width img-height img">
+        <img src="{$img['img3']['path']}" key="img3" class="pointer img-mgr img-width img-height img">
+        <img src="{$img['img4']['path']}" key="img4" class="pointer img-mgr img-width img-height img">
+    </div>
+</div>
+<script>
+    layui.use(['jquery', 'layer'], function () {
+        var $ = layui.jquery;
+        $('.img').click(function () {
+            var name = $(this).attr('key');
+            var url = "{:U('img')}";
+            var data = {name:name};
+            $.get(url, data, function (html) {
+                layer.open({
+                    type: 1,
+                    content: html,
+                    area: ['600px', '600px'],
+                    shadeClose: true
+                })
+            });
+        });
+
+        $('.logo').click(function () {
+            var name = $(this).attr('key');
+            var url = "{:U('logo')}";
+            var data = {name:name};
+            $.get(url, data, function (html) {
+                layer.open({
+                    type: 1,
+                    content: html,
+                    area: ['600px', '600px'],
+                    shadeClose: true
+                })
+            });
+        });
+    });
+</script>

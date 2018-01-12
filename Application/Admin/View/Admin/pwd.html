@@ -1,0 +1,36 @@
+<layout name="Common/admin_layout" />
+<form action="{:U()}" class="layui-form layui-form-pane">
+    <div class="layui-form-item">
+        <label class="layui-form-label">原始密码</label>
+        <div class="layui-input-inline">
+            <input type="password" name="old_pwd" lay-verify="required" autocomplete="off" class="layui-input">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">新密码</label>
+        <div class="layui-input-inline">
+            <input type="password" name="new_pwd" lay-verify="required" autocomplete="off" class="layui-input">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <div class="layui-input-block">
+            <button class="layui-btn" lay-submit lay-filter="*" post-form=".layui-form">立即提交</button>
+            <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+        </div>
+    </div>
+</form>
+<script>
+    layui.use(['form', 'jquery'], function () {
+        var form = layui.form;
+        var $ = layui.jquery;
+
+        form.on('submit(*)', function (data) {
+            var post = data.field;
+            var url = data.form.action;
+            $.post(url, post, function (res) {
+                layer.msg(res.info);
+            });
+            return false;
+        })
+    });
+</script>

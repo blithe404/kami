@@ -5,7 +5,7 @@
     }
 </style>
 <div class="nav">
-    <div class="contain">
+    <div class="contain" style="width:1000px;">
         <div class="title">全部商品分类</div>
         <ul gishop="word">
             <li><a href="/">首页</a></li>
@@ -15,7 +15,7 @@
         </ul>
     </div>
 </div>
-<div id="wrap">
+<div id="wrap" style="width:1000px;">
     <div class="index-sort">
         <ul>
             <volist name="category_product" id="list">
@@ -33,85 +33,57 @@
     <div class="index-show">
         <div class="img-roll">
             <div class="slide-main">
-                <img src="__PUBLIC__/home/imgs/qbi.png" width="771" height="312" alt="">
+                <a href="{:U('Order/create?pid='.$img['banner']['pid'])}" target="_blank">
+                    <img src="{$img['banner']['path']}" width="771" height="312" alt="">
+                </a>
             </div>
         </div>
         <div class="img-quick">
-            <a href="/" target="_blank">
-                <img src="__PUBLIC__/home/imgs/qb_pay.jpg" width="185" height="136">
+            <a href="{:U('Order/create?pid='.$img['img1']['pid'])}" target="_blank">
+                <img src="{$img['img1']['path']}" width="185" height="136">
             </a>
-            <a href="/" target="_blank">
-                <img src="__PUBLIC__/home/imgs/qb_pay.jpg" width="185" height="136">
+            <a href="{:U('Order/create?pid='.$img['img2']['pid'])}" target="_blank">
+                <img src="{$img['img2']['path']}" width="185" height="136">
             </a>
-            <a href="/" target="_blank">
-                <img src="__PUBLIC__/home/imgs/qb_pay.jpg" width="185" height="136">
+            <a href="{:U('Order/create?pid='.$img['img3']['pid'])}" target="_blank">
+                <img src="{$img['img3']['path']}" width="185" height="136">
             </a>
-            <a href="/" target="_blank">
-                <img src="__PUBLIC__/home/imgs/qb_pay.jpg" width="185" height="136">
+            <a href="{:U('Order/create?pid='.$img['img4']['pid'])}" target="_blank">
+                <img src="{$img['img4']['path']}" width="185" height="136">
             </a>
         </div>
     </div>
-    <div class="index-pay">
-        <div gishop="pic" id="adVt10">
-            <a href="/" target="_blank">
-                <img width="230" height="146" src="__PUBLIC__/home/imgs/shenda-pay.jpg">
-            </a>
-        </div>
-        <dl id="payId">
-            <dt>
-                <a href="javascript:void(0);" class="payCont1 sel" onclick="menuSwitch('payId','payCont1');">话费</a>
-                <a href="javascript:void(0);" class="payCont2" onclick="menuSwitch('payId','payCont2');">点卡</a>
-                <a href="javascript:void(0);" class="payCont3" onclick="menuSwitch('payId','payCont3');">Q币</a>
-            </dt>
-            <dd>
-                <!--话费-->
-                <ul id="payCont1">
-                    <li>
-                        <img src="__PUBLIC__/home/imgs/icon_phone.png">
-                        <input type="text" id="mobile" maxlength="11" class="input-t1" style="width:180px;"
-                               placeholder="请输入手机号码">
-                    </li>
-                    <li></li>
-                    <li></li>
-                    <li>
-                        <img src="__PUBLIC__/home/imgs/icon_money.png">
-                        <select name="select" id="txt_callName" style="width:120px">
-                            <option>请选择面额</option>
-                        </select>
-                    </li>
-                    <li><input type="submit" value="立即充值"></li>
-                </ul>
-                <!--点卡-->
-                <ul id="payCont2" class="hid">
-                    <li>
-                        <img src="__PUBLIC__/home/imgs/icon_phone.png">
-                        <select name="select" id="txt_cardGameName" style="width:180px">
-                            <option>请选择游戏</option>
-                        </select>
-                    </li>
-                    <li>
-                        <img src="__PUBLIC__/home/imgs/icon_money.png">
-                        <select name="select" id="txt_cardFaceValue" style="width:180px">
-                            <option>请选择面额</option>
-                        </select>
-                    </li>
-                    <li></li>
-                    <li></li>
-                    <li><input type="submit" name="Submit" value="立即充值"></li>
-                </ul>
-                <!--Q币-->
-                <ul id="payCont3" class="hid">
-                    <li><img src="__PUBLIC__/home/imgs/icon_money.png">
-                        <input type="number" id="qqBuyNum" name="qqBuyNum" maxlength="6" class="input-t1"
-                               style="width:180px;" placeholder="请输入购买数量">
-                    </li>
-                    <li></li>
-                    <li><input type="submit" name="Submit" value="立即充值"></li>
-                </ul>
-            </dd>
-        </dl>
-    </div>
-    <div style="clear: both;"></div>
+    <!--<div class="index-pay">-->
+        <!--<div gishop="pic" id="adVt10">-->
+            <!--<a href="/" target="_blank">-->
+                <!--<img width="230" height="146" src="__PUBLIC__/home/imgs/shenda-pay.jpg">-->
+            <!--</a>-->
+        <!--</div>-->
+        <!--<dl id="payId">-->
+            <!--<dt>-->
+                <!--<a href="javascript:void(0);" class="payCont1 sel" onclick="menuSwitch('payId','payCont1');">卡密</a>-->
+            <!--</dt>-->
+            <!--<dd>-->
+                <!--<form action="{:U('Order/create')}" method="get">-->
+                <!--<ul id="payCont1">-->
+                    <!--<li></li>-->
+                    <!--<li></li>-->
+                    <!--<li>-->
+                        <!--<select name="pid" id="txt_callName" style="width:120px">-->
+                            <!--<volist name="category_product" id="list">-->
+                                <!--<volist name="list" id="item">-->
+                                    <!--<option value="{$item.id}">{$item.name}</option>-->
+                                <!--</volist>-->
+                            <!--</volist>-->
+                        <!--</select>-->
+                    <!--</li>-->
+                    <!--<li><input type="submit" value="立即充值"></li>-->
+                <!--</ul>-->
+                <!--</form>-->
+            <!--</dd>-->
+        <!--</dl>-->
+    <!--</div>-->
+    <br clear="all">
 </div>
 <script>
     function menuSwitch(id, rel) {

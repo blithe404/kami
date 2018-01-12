@@ -14,12 +14,12 @@ use Think\Controller;
 class CommonController extends Controller {
 
     protected function _initialize() {
-//        $this->_isLogin();
+        $this->_isLogin();
     }
 
     protected function _isLogin() {
         $allows = array(
-            'user' => 'login,logout'
+            'admin' => 'login'
         );
         $controller = strtolower(CONTROLLER_NAME);
         $action = strtolower(ACTION_NAME);
@@ -34,7 +34,7 @@ class CommonController extends Controller {
             if (in_array($action, $actions))
                 return true;
         }
-        if ((int)UID == 0) {
+        if ((int)AID == 0) {
             $this->redirect(C('LOGIN_URL'));
         }
     }

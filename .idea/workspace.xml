@@ -2,163 +2,54 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="00800b1e-d268-4211-8126-c26be189e0a0" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/Application/Admin/Common/function.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Application/Admin/Controller/BankController.class.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Application/Admin/Controller/FileController.class.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Application/Admin/Controller/ProductCategoryController.class.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Application/Admin/Controller/ProductController.class.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Application/Admin/Controller/UserController.class.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Application/Admin/Model/BankModel.class.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Application/Admin/Model/CommonModel.class.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Application/Admin/Model/FileModel.class.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Application/Admin/Model/ProductCategoryModel.class.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Application/Admin/Model/ProductModel.class.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Application/Admin/Model/UserModel.class.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Application/Admin/View/Bank/add.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Application/Admin/View/Bank/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Application/Admin/View/Common/admin_footer.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Application/Admin/View/Common/admin_header.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Application/Admin/View/Common/admin_layout.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Application/Admin/View/Index/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Application/Admin/View/Index/sidebar.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Application/Admin/View/Product/add.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Application/Admin/View/Product/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Application/Admin/View/ProductCategory/add.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Application/Admin/View/ProductCategory/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Application/Admin/View/User/add.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Application/Admin/View/User/edit.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Application/Admin/View/User/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Application/Admin/View/User/order.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Application/Home/Model/OrderModel.class.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Application/Home/Model/ProductModel.class.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/css/layui.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/css/layui.mobile.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/css/modules/code.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/css/modules/laydate/default/laydate.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/css/modules/layer/default/icon-ext.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/css/modules/layer/default/icon.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/css/modules/layer/default/layer.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/css/modules/layer/default/loading-0.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/css/modules/layer/default/loading-1.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/css/modules/layer/default/loading-2.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/font/iconfont.eot" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/font/iconfont.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/font/iconfont.ttf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/font/iconfont.woff" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/images/face/0.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/images/face/1.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/images/face/10.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/images/face/11.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/images/face/12.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/images/face/13.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/images/face/14.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/images/face/15.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/images/face/16.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/images/face/17.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/images/face/18.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/images/face/19.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/images/face/2.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/images/face/20.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/images/face/21.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/images/face/22.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/images/face/23.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/images/face/24.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/images/face/25.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/images/face/26.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/images/face/27.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/images/face/28.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/images/face/29.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/images/face/3.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/images/face/30.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/images/face/31.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/images/face/32.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/images/face/33.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/images/face/34.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/images/face/35.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/images/face/36.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/images/face/37.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/images/face/38.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/images/face/39.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/images/face/4.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/images/face/40.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/images/face/41.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/images/face/42.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/images/face/43.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/images/face/44.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/images/face/45.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/images/face/46.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/images/face/47.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/images/face/48.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/images/face/49.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/images/face/5.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/images/face/50.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/images/face/51.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/images/face/52.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/images/face/53.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/images/face/54.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/images/face/55.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/images/face/56.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/images/face/57.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/images/face/58.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/images/face/59.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/images/face/6.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/images/face/60.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/images/face/61.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/images/face/62.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/images/face/63.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/images/face/64.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/images/face/65.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/images/face/66.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/images/face/67.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/images/face/68.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/images/face/69.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/images/face/7.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/images/face/70.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/images/face/71.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/images/face/8.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/images/face/9.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/js/admin.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/js/jquery.upload.original.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/lay/modules/carousel.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/lay/modules/code.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/lay/modules/element.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/lay/modules/flow.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/lay/modules/form.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/lay/modules/jquery.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/lay/modules/laydate.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/lay/modules/layedit.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/lay/modules/layer.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/lay/modules/laypage.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/lay/modules/laytpl.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/lay/modules/mobile.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/lay/modules/table.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/lay/modules/tree.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/lay/modules/upload.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/lay/modules/util.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/layui.all.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/Admin/layui.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Application/Admin/Controller/AdminController.class.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Application/Admin/Controller/ConfController.class.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Application/Admin/Controller/ImgController.class.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Application/Admin/Model/AdminModel.class.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Application/Admin/Model/ConfModel.class.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Application/Admin/Model/ImgModel.class.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Application/Admin/View/Admin/login.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Application/Admin/View/Admin/pwd.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Application/Admin/View/Conf/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Application/Admin/View/Img/img.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Application/Admin/View/Img/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Application/Admin/View/Img/logo.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Application/Home/Controller/FileController.class.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Application/Home/Model/FileModel.class.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Public/home/js/jquery.upload.original.js" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/Application/Admin/Conf/config.php" afterPath="$PROJECT_DIR$/Application/Admin/Conf/config.php" />
       <change beforePath="$PROJECT_DIR$/Application/Admin/Controller/CommonController.class.php" afterPath="$PROJECT_DIR$/Application/Admin/Controller/CommonController.class.php" />
-      <change beforePath="$PROJECT_DIR$/Application/Admin/Controller/IndexController.class.php" afterPath="$PROJECT_DIR$/Application/Admin/Controller/IndexController.class.php" />
-      <change beforePath="$PROJECT_DIR$/Application/Common/Common/index.html" afterPath="$PROJECT_DIR$/Application/Common/Common/index.html" />
-      <change beforePath="$PROJECT_DIR$/Application/Common/Conf/index.html" afterPath="$PROJECT_DIR$/Application/Common/Conf/index.html" />
-      <change beforePath="$PROJECT_DIR$/Application/Home/Controller/IndexController.class.php" afterPath="$PROJECT_DIR$/Application/Home/Controller/IndexController.class.php" />
-      <change beforePath="$PROJECT_DIR$/Application/Home/Controller/OrderController.class.php" afterPath="$PROJECT_DIR$/Application/Home/Controller/OrderController.class.php" />
-      <change beforePath="$PROJECT_DIR$/Application/Home/Controller/PayOrderController.class.php" afterPath="$PROJECT_DIR$/Application/Home/Controller/PayOrderController.class.php" />
+      <change beforePath="$PROJECT_DIR$/Application/Admin/Controller/PayOrderController.class.php" afterPath="$PROJECT_DIR$/Application/Admin/Controller/PayOrderController.class.php" />
+      <change beforePath="$PROJECT_DIR$/Application/Admin/Model/PayOrderModel.class.php" afterPath="$PROJECT_DIR$/Application/Admin/Model/PayOrderModel.class.php" />
+      <change beforePath="$PROJECT_DIR$/Application/Admin/View/Common/admin_footer.html" afterPath="$PROJECT_DIR$/Application/Admin/View/Common/admin_footer.html" />
+      <change beforePath="$PROJECT_DIR$/Application/Admin/View/Index/sidebar.html" afterPath="$PROJECT_DIR$/Application/Admin/View/Index/sidebar.html" />
+      <change beforePath="$PROJECT_DIR$/Application/Admin/View/PayOrder/index.html" afterPath="$PROJECT_DIR$/Application/Admin/View/PayOrder/index.html" />
+      <change beforePath="$PROJECT_DIR$/Application/Admin/View/User/index.html" afterPath="$PROJECT_DIR$/Application/Admin/View/User/index.html" />
+      <change beforePath="$PROJECT_DIR$/Application/Home/Conf/config.php" afterPath="$PROJECT_DIR$/Application/Home/Conf/config.php" />
+      <change beforePath="$PROJECT_DIR$/Application/Home/Controller/CommonController.class.php" afterPath="$PROJECT_DIR$/Application/Home/Controller/CommonController.class.php" />
       <change beforePath="$PROJECT_DIR$/Application/Home/Controller/ProductController.class.php" afterPath="$PROJECT_DIR$/Application/Home/Controller/ProductController.class.php" />
       <change beforePath="$PROJECT_DIR$/Application/Home/Controller/UserController.class.php" afterPath="$PROJECT_DIR$/Application/Home/Controller/UserController.class.php" />
-      <change beforePath="$PROJECT_DIR$/Application/Home/Model/BankModel.class.php" afterPath="$PROJECT_DIR$/Application/Home/Model/BankModel.class.php" />
-      <change beforePath="$PROJECT_DIR$/Application/Home/Model/PayOrderModel.class.php" afterPath="$PROJECT_DIR$/Application/Home/Model/PayOrderModel.class.php" />
+      <change beforePath="$PROJECT_DIR$/Application/Home/Model/OrderModel.class.php" afterPath="$PROJECT_DIR$/Application/Home/Model/OrderModel.class.php" />
+      <change beforePath="$PROJECT_DIR$/Application/Home/Model/UserModel.class.php" afterPath="$PROJECT_DIR$/Application/Home/Model/UserModel.class.php" />
+      <change beforePath="$PROJECT_DIR$/Application/Home/View/pc/Common/footer.html" afterPath="$PROJECT_DIR$/Application/Home/View/pc/Common/footer.html" />
       <change beforePath="$PROJECT_DIR$/Application/Home/View/pc/Common/header.html" afterPath="$PROJECT_DIR$/Application/Home/View/pc/Common/header.html" />
       <change beforePath="$PROJECT_DIR$/Application/Home/View/pc/Index/index.html" afterPath="$PROJECT_DIR$/Application/Home/View/pc/Index/index.html" />
-      <change beforePath="$PROJECT_DIR$/Application/Home/View/pc/Order/create.html" afterPath="$PROJECT_DIR$/Application/Home/View/pc/Order/create.html" />
       <change beforePath="$PROJECT_DIR$/Application/Home/View/pc/PayOrder/create.html" afterPath="$PROJECT_DIR$/Application/Home/View/pc/PayOrder/create.html" />
       <change beforePath="$PROJECT_DIR$/Application/Home/View/pc/Product/lists.html" afterPath="$PROJECT_DIR$/Application/Home/View/pc/Product/lists.html" />
-      <change beforePath="$PROJECT_DIR$/Application/Home/View/pc/User/change_pwd.html" afterPath="$PROJECT_DIR$/Application/Home/View/pc/User/change_pwd.html" />
-      <change beforePath="$PROJECT_DIR$/Application/Home/View/pc/User/orderList.html" afterPath="$PROJECT_DIR$/Application/Home/View/pc/User/orderList.html" />
-      <change beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/20914c0f075f91df3579ffbdf5180b02.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/20914c0f075f91df3579ffbdf5180b02.php" />
-      <change beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/index.html" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/index.html" />
+      <change beforePath="$PROJECT_DIR$/Application/Home/View/pc/User/index.html" afterPath="$PROJECT_DIR$/Application/Home/View/pc/User/index.html" />
+      <change beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/20914c0f075f91df3579ffbdf5180b02.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php" />
+      <change beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/383c1a246832a004cfdb68e821dc6749.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/383c1a246832a004cfdb68e821dc6749.php" />
+      <change beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/4e1f0ee1a12a8dbb63343fe9e6a3f60d.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/4e1f0ee1a12a8dbb63343fe9e6a3f60d.php" />
+      <change beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php" />
+      <change beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/776523ada061287d386fbbb5f3b570aa.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/8b641081e7ea680aaaea87475742484f.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/8b641081e7ea680aaaea87475742484f.php" />
+      <change beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php" />
+      <change beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/c5c8f88f4330c605468367c8bb60454a.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/c5c8f88f4330c605468367c8bb60454a.php" />
+      <change beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/d5c09ac8bfa7aa73394c924f31881833.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/d5c09ac8bfa7aa73394c924f31881833.php" />
+      <change beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/e876194dbdb51e30e50a432276278205.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/e876194dbdb51e30e50a432276278205.php" />
+      <change beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/index.html" afterPath="" />
       <change beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/1bd94bed498aa16999216834a314badc.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Home/1bd94bed498aa16999216834a314badc.php" />
       <change beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/2276cb7a0c60153eac3b229eadee6e1b.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Home/2276cb7a0c60153eac3b229eadee6e1b.php" />
       <change beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/22a2bce16527268705a5633a867c4315.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Home/22a2bce16527268705a5633a867c4315.php" />
@@ -167,22 +58,27 @@
       <change beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/cc41b36b33ec4a55abea8e81449df67d.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Home/cc41b36b33ec4a55abea8e81449df67d.php" />
       <change beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/dd825c7ca01c988ef206e00f67a9ce12.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Home/dd825c7ca01c988ef206e00f67a9ce12.php" />
       <change beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/ecfe80bec1248f2173f1536e9dc88424.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Home/ecfe80bec1248f2173f1536e9dc88424.php" />
-      <change beforePath="$PROJECT_DIR$/Application/Runtime/Cache/index.html" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/index.html" />
-      <change beforePath="$PROJECT_DIR$/Application/Runtime/Data/index.html" afterPath="$PROJECT_DIR$/Application/Runtime/Data/index.html" />
-      <change beforePath="$PROJECT_DIR$/Application/Runtime/Logs/Admin/18_01_11.log" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Admin/18_01_11.log" />
-      <change beforePath="$PROJECT_DIR$/Application/Runtime/Logs/Admin/index.html" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Admin/index.html" />
-      <change beforePath="$PROJECT_DIR$/Application/Runtime/Logs/Home/18_01_11.log" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Home/18_01_11.log" />
-      <change beforePath="$PROJECT_DIR$/Application/Runtime/Logs/index.html" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/index.html" />
-      <change beforePath="$PROJECT_DIR$/Application/Runtime/Temp/index.html" afterPath="$PROJECT_DIR$/Application/Runtime/Temp/index.html" />
-      <change beforePath="$PROJECT_DIR$/Application/Runtime/index.html" afterPath="$PROJECT_DIR$/Application/Runtime/index.html" />
-      <change beforePath="$PROJECT_DIR$/Public/home/imgs/button_bg_1.jpg" afterPath="$PROJECT_DIR$/Public/home/imgs/button_bg_1.jpg" />
-      <change beforePath="$PROJECT_DIR$/Public/home/imgs/button_bg_2.jpg" afterPath="$PROJECT_DIR$/Public/home/imgs/button_bg_2.jpg" />
-      <change beforePath="$PROJECT_DIR$/Public/home/imgs/icon_4.jpg" afterPath="$PROJECT_DIR$/Public/home/imgs/icon_4.jpg" />
-      <change beforePath="$PROJECT_DIR$/Public/home/imgs/icon_down.jpg" afterPath="$PROJECT_DIR$/Public/home/imgs/icon_down.jpg" />
-      <change beforePath="$PROJECT_DIR$/Public/home/imgs/icon_up.jpg" afterPath="$PROJECT_DIR$/Public/home/imgs/icon_up.jpg" />
-      <change beforePath="$PROJECT_DIR$/Public/home/imgs/title_bg_1.jpg" afterPath="$PROJECT_DIR$/Public/home/imgs/title_bg_1.jpg" />
-      <change beforePath="$PROJECT_DIR$/Public/home/imgs/title_bg_2.jpg" afterPath="$PROJECT_DIR$/Public/home/imgs/title_bg_2.jpg" />
-      <change beforePath="$PROJECT_DIR$/admin.php" afterPath="$PROJECT_DIR$/admin.php" />
+      <change beforePath="$PROJECT_DIR$/Application/Runtime/Cache/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Application/Runtime/Data/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Application/Runtime/Logs/Admin/18_01_11.log" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Application/Runtime/Logs/Admin/18_01_12.log" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Admin/18_01_12.log" />
+      <change beforePath="$PROJECT_DIR$/Application/Runtime/Logs/Admin/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Application/Runtime/Logs/Home/18_01_11.log" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Application/Runtime/Logs/Home/18_01_12.log" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Home/18_01_12.log" />
+      <change beforePath="$PROJECT_DIR$/Application/Runtime/Logs/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Application/Runtime/Temp/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Application/Runtime/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Public/home/css/style.css" afterPath="$PROJECT_DIR$/Public/home/css/style.css" />
+      <change beforePath="$PROJECT_DIR$/Uploads/product/2018-01-12/5a58618a2f6ac.png" afterPath="$PROJECT_DIR$/Uploads/product/2018-01-12/5a58618a2f6ac.png" />
+      <change beforePath="$PROJECT_DIR$/Uploads/product/2018-01-12/5a5862ce9615d.png" afterPath="$PROJECT_DIR$/Uploads/product/2018-01-12/5a5862ce9615d.png" />
+      <change beforePath="$PROJECT_DIR$/Uploads/product/2018-01-12/5a58631820a52.png" afterPath="$PROJECT_DIR$/Uploads/product/2018-01-12/5a58631820a52.png" />
+      <change beforePath="$PROJECT_DIR$/Uploads/product/2018-01-12/5a5863398eee3.png" afterPath="$PROJECT_DIR$/Uploads/product/2018-01-12/5a5863398eee3.png" />
+      <change beforePath="$PROJECT_DIR$/Uploads/product/2018-01-12/5a58635b4806a.png" afterPath="$PROJECT_DIR$/Uploads/product/2018-01-12/5a58635b4806a.png" />
+      <change beforePath="$PROJECT_DIR$/Uploads/product/2018-01-12/5a58636c4a20a.png" afterPath="$PROJECT_DIR$/Uploads/product/2018-01-12/5a58636c4a20a.png" />
+      <change beforePath="$PROJECT_DIR$/Uploads/product/2018-01-12/5a586391cfe27.png" afterPath="$PROJECT_DIR$/Uploads/product/2018-01-12/5a586391cfe27.png" />
+      <change beforePath="$PROJECT_DIR$/Uploads/product/2018-01-12/5a587c239c629.jpg" afterPath="$PROJECT_DIR$/Uploads/product/2018-01-12/5a587c239c629.jpg" />
+      <change beforePath="$PROJECT_DIR$/Uploads/product/2018-01-12/5a587da432fff.gif" afterPath="$PROJECT_DIR$/Uploads/product/2018-01-12/5a587da432fff.gif" />
+      <change beforePath="$PROJECT_DIR$/Uploads/product/2018-01-12/5a58958370898.jpg" afterPath="$PROJECT_DIR$/Uploads/product/2018-01-12/5a58958370898.jpg" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -214,6 +110,9 @@
       <find>$username</find>
       <find>login.gi</find>
       <find>$User</find>
+      <find>wrap</find>
+      <find>index-sort</find>
+      <find>warn</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -229,47 +128,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Application/Home/Controller/CommonController.class.php" />
-        <option value="$PROJECT_DIR$/Application/Home/View/pc/PayOrder/create.html" />
-        <option value="$PROJECT_DIR$/admin.php" />
-        <option value="$PROJECT_DIR$/Application/Admin/Controller/CommonController.class.php" />
-        <option value="$PROJECT_DIR$/Application/Admin/Controller/IndexController.class.php" />
-        <option value="$PROJECT_DIR$/Application/Admin/View/Index/index.html" />
-        <option value="$PROJECT_DIR$/Application/Admin/View/Common/admin_header.html" />
-        <option value="$PROJECT_DIR$/Application/Admin/View/Common/admin_footer.html" />
-        <option value="$PROJECT_DIR$/Application/Admin/View/Common/admin_layout.html" />
-        <option value="$PROJECT_DIR$/Application/Admin/Common/function.php" />
-        <option value="$PROJECT_DIR$/Application/Admin/View/User/add.html" />
-        <option value="$PROJECT_DIR$/Application/Admin/View/User/edit.html" />
-        <option value="$PROJECT_DIR$/Application/Admin/Model/UserModel.class.php" />
-        <option value="$PROJECT_DIR$/Application/Admin/View/User/index.html" />
-        <option value="$PROJECT_DIR$/Application/Admin/Model/ProductCategory.class.php" />
-        <option value="$PROJECT_DIR$/Application/Admin/Model/ProductCategoryModel.class.php" />
-        <option value="$PROJECT_DIR$/Application/Admin/Controller/ProductCategoryController.class.php" />
-        <option value="$PROJECT_DIR$/Application/Admin/View/ProductCategory/add.html" />
-        <option value="$PROJECT_DIR$/Application/Admin/Conf/config.php" />
-        <option value="$PROJECT_DIR$/Application/Admin/Model/ProductModel.class.php" />
-        <option value="$USER_HOME$/Library/Application Support/Yummy FTP/Remote Edits/103.80.27.252 Edits/IndexAction.class.php/IndexAction.class.php" />
-        <option value="$USER_HOME$/Desktop/php 2/php/qqq2/App/Tpl/Home/Index_index.html" />
-        <option value="$USER_HOME$/Library/Application Support/Yummy FTP/Remote Edits/103.80.27.252 Edits/Index_test.html1/Index_test.html" />
-        <option value="$USER_HOME$/Library/Application Support/Yummy FTP/Remote Edits/103.80.27.252 Edits/Index_index.html/Index_index.html" />
-        <option value="$USER_HOME$/Library/Application Support/Yummy FTP/Remote Edits/103.100.210.173 Edits/my.cnf/my.cnf" />
-        <option value="$USER_HOME$/Library/Application Support/Yummy FTP/Remote Edits/103.100.210.173 Edits/Index_index.html/Index_index.html" />
-        <option value="$PROJECT_DIR$/Application/Admin/View/ProductCategory/index.html" />
-        <option value="$PROJECT_DIR$/Application/Home/Controller/IndexController.class.php" />
-        <option value="$PROJECT_DIR$/Application/Home/View/pc/Common/header.html" />
-        <option value="$PROJECT_DIR$/Application/Home/Model/ProductModel.class.php" />
-        <option value="$PROJECT_DIR$/Application/Home/View/pc/Index/index.html" />
-        <option value="$PROJECT_DIR$/Application/Home/Controller/OrderController.class.php" />
-        <option value="$USER_HOME$/Library/Application Support/Yummy FTP/Remote Edits/103.100.210.173 Edits/User_signup.html/User_signup.html" />
-        <option value="$USER_HOME$/Library/Application Support/Yummy FTP/Remote Edits/103.100.210.173 Edits/User_login.html/User_login.html" />
         <option value="$USER_HOME$/Library/Application Support/Yummy FTP/Remote Edits/103.100.210.173 Edits/Shenhe_doing.html/Shenhe_doing.html" />
         <option value="$PROJECT_DIR$/Application/Home/View/pc/Order/create.html" />
-        <option value="$PROJECT_DIR$/Application/Home/Model/OrderModel.class.php" />
-        <option value="$PROJECT_DIR$/Application/Home/Controller/UserController.class.php" />
         <option value="$PROJECT_DIR$/Application/Home/View/pc/User/orderList.html" />
-        <option value="$PROJECT_DIR$/Application/Home/Controller/ProductController.class.php" />
-        <option value="$PROJECT_DIR$/Application/Home/View/pc/Product/lists.html" />
         <option value="$PROJECT_DIR$/Application/Admin/View/Product/index.html" />
         <option value="$PROJECT_DIR$/Application/Admin/Controller/ProductController.class.php" />
         <option value="$PROJECT_DIR$/Application/Admin/View/Product/add.html" />
@@ -279,7 +140,45 @@
         <option value="$PROJECT_DIR$/Application/Admin/View/Bank/add.html" />
         <option value="$PROJECT_DIR$/Application/Admin/Controller/BankController.class.php" />
         <option value="$PROJECT_DIR$/Application/Admin/Model/BankModel.class.php" />
+        <option value="$PROJECT_DIR$/Application/Admin/Controller/PayOrderController.class.php" />
+        <option value="$PROJECT_DIR$/Application/Admin/Model/PayOrderModel.class.php" />
+        <option value="$PROJECT_DIR$/Application/Home/Controller/ProductController.class.php" />
+        <option value="$USER_HOME$/Library/Application Support/Yummy FTP/Remote Edits/103.100.208.211 Edits/my.cnf/my.cnf" />
+        <option value="$USER_HOME$/Library/Application Support/Yummy FTP/Remote Edits/103.100.208.211 Edits/config.php/config.php" />
+        <option value="$PROJECT_DIR$/Application/Home/View/pc/PayOrder/create.html" />
+        <option value="$PROJECT_DIR$/Application/Home/View/pc/Product/lists.html" />
+        <option value="$PROJECT_DIR$/Application/Home/View/pc/Common/footer.html" />
+        <option value="$PROJECT_DIR$/Application/Home/Model/FileModel.class.php" />
+        <option value="$PROJECT_DIR$/Application/Home/Conf/config.php" />
+        <option value="$PROJECT_DIR$/Application/Home/Controller/FileController.class.php" />
+        <option value="$PROJECT_DIR$/Application/Home/Controller/UserController.class.php" />
+        <option value="$PROJECT_DIR$/Application/Home/Model/UserModel.class.php" />
+        <option value="$PROJECT_DIR$/Application/Home/View/pc/User/index.html" />
+        <option value="$PROJECT_DIR$/Public/home/css/style.css" />
+        <option value="$PROJECT_DIR$/Public/home/css/common.css" />
+        <option value="$PROJECT_DIR$/Application/Home/Model/OrderModel.class.php" />
         <option value="$PROJECT_DIR$/Application/Admin/View/Index/sidebar.html" />
+        <option value="$PROJECT_DIR$/Application/Admin/View/User/index.html" />
+        <option value="$PROJECT_DIR$/Application/Admin/View/Img/img.html" />
+        <option value="$PROJECT_DIR$/Application/Admin/View/Img/logo.html" />
+        <option value="$PROJECT_DIR$/Application/Admin/Controller/ImgController.class.php" />
+        <option value="$PROJECT_DIR$/Application/Admin/Model/ImgModel.class.php" />
+        <option value="$PROJECT_DIR$/Application/Admin/View/Img/index.html" />
+        <option value="$PROJECT_DIR$/Application/Admin/View/Conf/index.html" />
+        <option value="$PROJECT_DIR$/Application/Admin/Model/ConfModel.class.php" />
+        <option value="$PROJECT_DIR$/Application/Admin/Controller/ConfController.class.php" />
+        <option value="$PROJECT_DIR$/Application/Home/Admin/login.html" />
+        <option value="$PROJECT_DIR$/Application/Admin/Conf/config.php" />
+        <option value="$PROJECT_DIR$/Application/Admin/View/Admin/login.html" />
+        <option value="$PROJECT_DIR$/Application/Admin/Controller/CommonController.class.php" />
+        <option value="$PROJECT_DIR$/Application/Admin/View/Common/admin_footer.html" />
+        <option value="$PROJECT_DIR$/Application/Admin/Controller/AdminController.class.php" />
+        <option value="$PROJECT_DIR$/Application/Admin/View/Admin/pwd.html" />
+        <option value="$PROJECT_DIR$/Application/Admin/Model/AdminModel.class.php" />
+        <option value="$PROJECT_DIR$/Application/Home/Controller/CommonController.class.php" />
+        <option value="$PROJECT_DIR$/Application/Admin/View/PayOrder/index.html" />
+        <option value="$PROJECT_DIR$/Application/Home/View/pc/Common/header.html" />
+        <option value="$PROJECT_DIR$/Application/Home/View/pc/Index/index.html" />
       </list>
     </option>
   </component>
@@ -330,52 +229,31 @@
               <item name="kami" type="b2602c69:ProjectViewProjectNode" />
               <item name="kami" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Application" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Home" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="kami" type="b2602c69:ProjectViewProjectNode" />
               <item name="kami" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Application" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Admin" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="kami" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kami" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Application" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Admin" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Model" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="kami" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kami" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Application" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Home" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="View" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="kami" type="b2602c69:ProjectViewProjectNode" />
               <item name="kami" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Application" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Home" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="View" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Bank" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="pc" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="kami" type="b2602c69:ProjectViewProjectNode" />
               <item name="kami" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Application" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Home" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="View" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Index" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="kami" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kami" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Application" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Admin" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="View" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Product" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="pc" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Common" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -392,7 +270,13 @@
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$2/Languages" value="LESS" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Public/home/js" />
+      <recent name="$PROJECT_DIR$/Application/Home/Model" />
+      <recent name="$PROJECT_DIR$/Application/Home/Controller" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Application/Admin/View" />
       <recent name="$PROJECT_DIR$/Application/Home/View/pc/PayOrder" />
       <recent name="$PROJECT_DIR$/Public/home/imgs" />
       <recent name="$PROJECT_DIR$/Public/home" />
@@ -432,12 +316,12 @@
       <workItem from="1515542826110" duration="544000" />
       <workItem from="1515584664666" duration="583000" />
       <workItem from="1515590560305" duration="1307000" />
-      <workItem from="1515596808300" duration="68273000" />
+      <workItem from="1515596808300" duration="91722000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87582000" />
+    <option name="totallyTimeSpent" value="111031000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="977" extended-state="0" />
@@ -475,358 +359,210 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Desktop/php/php/cx/Application/Admin/Model/UserModel.class.php">
+    <entry file="file://$PROJECT_DIR$/Application/Admin/Model/BankModel.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="52" column="5" lean-forward="true" selection-start-line="40" selection-start-column="4" selection-end-line="52" selection-end-column="5" />
+        <state relative-caret-position="713">
+          <caret line="46" column="5" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="46" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/IndexController.class.php">
+    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Bank/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="808">
+          <caret line="78" column="9" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="78" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/BankController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-297">
+          <caret line="12" column="4" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="64" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/php/php/cx/Application/Admin/View/User/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/PayOrderController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/Model/PayOrderModel.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
-          <caret line="7" column="25" lean-forward="false" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+          <caret line="12" column="26" lean-forward="false" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Product/category.html">
+    <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/PayOrderController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/View/User/add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
-          <caret line="45" column="39" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="58" selection-end-column="9" />
-          <folding>
-            <element signature="n#style#0;n#form#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/Model/FileModel.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/CommonController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="41" column="40" lean-forward="false" selection-start-line="41" selection-start-column="40" selection-end-line="41" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/ProductCategoryController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-26">
-          <caret line="21" column="4" lean-forward="true" selection-start-line="21" selection-start-column="4" selection-end-line="65" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/View/ProductCategory/add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="44" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="34" selection-end-column="9" />
-          <folding>
-            <element signature="n#style#0;n#form#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/php/php/cx/Application/Admin/View/Mine/form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="667">
-          <caret line="79" column="11" lean-forward="true" selection-start-line="64" selection-start-column="8" selection-end-line="79" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/Model/ProductCategoryModel.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="741">
-          <caret line="44" column="41" lean-forward="false" selection-start-line="44" selection-start-column="41" selection-end-line="44" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/Model/ProductModel.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="19" column="51" lean-forward="true" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/php 2/php/qqq2/App/Tpl/Home/Index_index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="270" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/php 2/php/qqq-1/App/Tpl/Home/Index_index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="270" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/php 2/php/qqq/App/Tpl/Home/Index_index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="270" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Application Support/Yummy FTP/Remote Edits/103.80.27.252 Edits/Index_test.html1/Index_test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="185" column="32" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="270" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Application Support/Yummy FTP/Remote Edits/103.80.27.252 Edits/IndexAction.class.php/IndexAction.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="24" lean-forward="false" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Application Support/Yummy FTP/Remote Edits/103.100.210.173 Edits/my.cnf/my.cnf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="46" column="29" lean-forward="false" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Application Support/Yummy FTP/Remote Edits/103.80.27.252 Edits/Index_index.html/Index_index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="786">
-          <caret line="270" column="7" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="270" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Application Support/Yummy FTP/Remote Edits/103.100.210.173 Edits/Index_index.html/Index_index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="46" column="54" lean-forward="false" selection-start-line="46" selection-start-column="54" selection-end-line="46" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/View/ProductCategory/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="55" column="49" lean-forward="false" selection-start-line="55" selection-start-column="49" selection-end-line="55" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/Conf/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="40" lean-forward="false" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Home/View/pc/Common/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="23" column="16" lean-forward="false" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Home/Model/ProductModel.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="28" column="20" lean-forward="true" selection-start-line="23" selection-start-column="8" selection-end-line="28" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/IndexController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="45" lean-forward="true" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Home/View/pc/Index/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="81" lean-forward="false" selection-start-line="12" selection-start-column="81" selection-end-line="12" selection-end-column="81" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Home/View/pc/User/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="691">
-          <caret line="97" column="6" lean-forward="true" selection-start-line="89" selection-start-column="4" selection-end-line="97" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Application Support/Yummy FTP/Remote Edits/103.100.210.173 Edits/Help_index.html/Help_index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="636">
-          <caret line="37" column="59" lean-forward="false" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Application Support/Yummy FTP/Remote Edits/103.100.210.173 Edits/User_signup.html/User_signup.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="644">
-          <caret line="46" column="73" lean-forward="false" selection-start-line="46" selection-start-column="73" selection-end-line="46" selection-end-column="73" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Application Support/Yummy FTP/Remote Edits/103.100.210.173 Edits/User_login.html/User_login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="286" column="46" lean-forward="false" selection-start-line="286" selection-start-column="46" selection-end-line="286" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Application Support/Yummy FTP/Remote Edits/103.100.210.173 Edits/Shenhe_doing.html/Shenhe_doing.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="88" lean-forward="false" selection-start-line="17" selection-start-column="88" selection-end-line="17" selection-end-column="88" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Home/View/pc/Order/create.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="32" column="64" lean-forward="false" selection-start-line="32" selection-start-column="64" selection-end-line="32" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/CommonController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Home/Model/OrderModel.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="741">
-          <caret line="44" column="58" lean-forward="false" selection-start-line="44" selection-start-column="58" selection-end-line="44" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/OrderController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="20" column="36" lean-forward="false" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/UserController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="91" column="41" lean-forward="false" selection-start-line="91" selection-start-column="41" selection-end-line="91" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Home/View/pc/User/orderList.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="678">
-          <caret line="50" column="55" lean-forward="false" selection-start-line="50" selection-start-column="55" selection-end-line="50" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Home/View/pc/Product/lists.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="644">
-          <caret line="42" column="54" lean-forward="false" selection-start-line="42" selection-start-column="54" selection-end-line="42" selection-end-column="54" />
+        <state relative-caret-position="378">
+          <caret line="46" column="39" lean-forward="false" selection-start-line="46" selection-start-column="39" selection-end-line="46" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/Home/Controller/ProductController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="25" column="37" lean-forward="false" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
+        <state relative-caret-position="228">
+          <caret line="17" column="31" lean-forward="true" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/View/User/edit.html">
+    <entry file="file://$USER_HOME$/Library/Application Support/Yummy FTP/Remote Edits/103.100.208.211 Edits/my.cnf/my.cnf">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="29" column="71" lean-forward="false" selection-start-line="29" selection-start-column="71" selection-end-line="29" selection-end-column="71" />
+        <state relative-caret-position="383">
+          <caret line="46" column="29" lean-forward="false" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Application Support/Yummy FTP/Remote Edits/103.100.208.211 Edits/config.php/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="35" lean-forward="true" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/pc/PayOrder/create.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="42" lean-forward="false" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/pc/Product/lists.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="805">
+          <caret line="51" column="6" lean-forward="false" selection-start-line="51" selection-start-column="6" selection-end-line="51" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/pc/Common/footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="32" column="6" lean-forward="true" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/Model/FileModel.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="14" lean-forward="false" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Public/home/js/jquery.upload.original.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1483088365000" expanded="true" signature="601:630" ph="..." />
+            <marker date="1483088365000" expanded="true" signature="705:718" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/Conf/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="11" lean-forward="false" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/FileController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="49" lean-forward="false" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/UserController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="76" column="80" lean-forward="false" selection-start-line="76" selection-start-column="80" selection-end-line="76" selection-end-column="80" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/pc/User/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="455">
+          <caret line="95" column="97" lean-forward="false" selection-start-line="95" selection-start-column="97" selection-end-line="95" selection-end-column="97" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#notempty#0;n#span#1;n#li#4;n#ul#1;n#form#0;n#div#2;n#div#1;n#div#0;n#div#0;n#!!top" expanded="false" />
+            <marker date="1515772386605" expanded="true" signature="5623:5670" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Public/home/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Public/home/css/common.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="429" column="12" lean-forward="false" selection-start-line="429" selection-start-column="8" selection-end-line="429" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/Model/OrderModel.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="691">
+          <caret line="46" column="66" lean-forward="false" selection-start-line="46" selection-start-column="66" selection-end-line="46" selection-end-column="66" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/Admin/View/Product/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
+        <state relative-caret-position="-159">
           <caret line="38" column="92" lean-forward="false" selection-start-line="38" selection-start-column="92" selection-end-line="38" selection-end-column="92" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/ProductController.class.php">
+    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Index/sidebar.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="56" column="45" lean-forward="false" selection-start-line="56" selection-start-column="45" selection-end-line="56" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/View/User/order.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="710">
-          <caret line="46" column="9" lean-forward="false" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/UserController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="88" column="5" lean-forward="true" selection-start-line="54" selection-start-column="4" selection-end-line="88" selection-end-column="5" />
+        <state relative-caret-position="625">
+          <caret line="35" column="81" lean-forward="false" selection-start-line="35" selection-start-column="81" selection-end-line="35" selection-end-column="81" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/Admin/View/User/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="10" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="10" selection-end-column="10" />
+        <state relative-caret-position="520">
+          <caret line="68" column="40" lean-forward="true" selection-start-line="67" selection-start-column="24" selection-end-line="68" selection-end-column="40" />
           <folding />
         </state>
       </provider>
@@ -839,51 +575,207 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/ImgController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/Model/ImgModel.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="40" column="22" lean-forward="false" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Img/img.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" column="67" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="69" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Img/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="455">
+          <caret line="46" column="43" lean-forward="false" selection-start-line="46" selection-start-column="43" selection-end-line="46" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Img/logo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="710">
+          <caret line="59" column="9" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="59" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/Model/ConfModel.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="18" column="41" lean-forward="false" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/ConfController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="15" column="36" lean-forward="false" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/Common/function.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Public/Admin/css/layui.mobile.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-780">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Public/Admin/js/admin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1511543792000" expanded="true" signature="2358:2365" ph="×" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Application/Admin/View/Bank/add.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="31" column="29" lean-forward="false" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
+        <state relative-caret-position="257">
+          <caret line="23" column="87" lean-forward="true" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="87" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Bank/index.html">
+    <entry file="file://$PROJECT_DIR$/Application/Admin/Conf/config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1482">
-          <caret line="78" column="9" lean-forward="true" selection-start-line="78" selection-start-column="9" selection-end-line="78" selection-end-column="9" />
+        <state relative-caret-position="57">
+          <caret line="3" column="33" lean-forward="true" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Index/sidebar.html">
+    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Admin/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="28" column="83" lean-forward="false" selection-start-line="28" selection-start-column="83" selection-end-line="28" selection-end-column="83" />
+        <state relative-caret-position="558">
+          <caret line="71" column="51" lean-forward="false" selection-start-line="71" selection-start-column="51" selection-end-line="71" selection-end-column="51" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/Model/UserModel.class.php">
+    <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/CommonController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="691">
-          <caret line="55" column="5" lean-forward="true" selection-start-line="28" selection-start-column="4" selection-end-line="55" selection-end-column="5" />
+        <state relative-caret-position="553">
+          <caret line="36" column="20" lean-forward="false" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/Model/BankModel.class.php">
+    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Common/admin_footer.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="691">
-          <caret line="46" column="5" lean-forward="false" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
+        <state relative-caret-position="456">
+          <caret line="24" column="17" lean-forward="false" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/BankController.class.php">
+    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Conf/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="498">
-          <caret line="53" column="43" lean-forward="false" selection-start-line="53" selection-start-column="43" selection-end-line="53" selection-end-column="43" />
+        <state relative-caret-position="494">
+          <caret line="26" column="36" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="31" selection-end-column="9" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/Model/UserModel.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1120">
+          <caret line="100" column="45" lean-forward="false" selection-start-line="100" selection-start-column="45" selection-end-line="100" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Admin/pwd.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="48" lean-forward="false" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/Model/AdminModel.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="19" column="84" lean-forward="false" selection-start-line="19" selection-start-column="84" selection-end-line="19" selection-end-column="84" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/AdminController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="30" column="43" lean-forward="false" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/CommonController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="24" column="35" lean-forward="false" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/View/PayOrder/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="38" column="46" lean-forward="false" selection-start-line="38" selection-start-column="46" selection-end-line="38" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Common/admin_header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="95" lean-forward="true" selection-start-line="20" selection-start-column="95" selection-end-line="20" selection-end-column="95" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/pc/Common/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="505">
+          <caret line="44" column="43" lean-forward="false" selection-start-line="44" selection-start-column="43" selection-end-line="44" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/pc/Index/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="18" column="16" lean-forward="true" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+          <folding>
+            <marker date="1515788272514" expanded="false" signature="2899:2910" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

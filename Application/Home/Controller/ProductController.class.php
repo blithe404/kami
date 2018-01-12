@@ -12,9 +12,18 @@ namespace Home\Controller;
 class ProductController extends CommonController {
     public function lists() {
 
-        $cid = I('get.cid', 1, 'intval');
-        $map['cid'] = $cid;
+        $cid = I('get.cid', 0, 'intval');
+        $keyword = I('get.keyword', '', 'trim');
+        if(!empty($cid)) {
+            $map['cid'] = $cid;
+        }
+        if(!empty($keyword)) {
+            $map['p.name'] = array('like', '%'.$keyword.'%');
+            $this->assign('keyword', $keyword);
+        }
+
         $map['p.cid'] = array('exp', '=pc.id');
+
         $table = array(
             'k_product' => 'p',
             'k_product_category' => 'pc'

@@ -73,7 +73,8 @@ class UserController extends CommonController {
             $idcard = I('post.idcard', '', 'trim');
             $bankcard = I('post.bankcard', '', 'trim');
             $bank = I('post.bank', '', 'trim');
-            $res = $User->saveInfo(UID, $email, $realname, $idcard, $bank, $bankcard);
+            $idcard_img = I('post.idcard_img', '', 'trim');
+            $res = $User->saveInfo(UID, $email, $realname, $idcard, $idcard_img, $bank, $bankcard);
             $this->ajaxReturn($res);
         }
 

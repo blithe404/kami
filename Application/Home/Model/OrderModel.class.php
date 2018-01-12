@@ -41,7 +41,11 @@ class OrderModel extends CommonModel {
         );
         $res = $this->add($data);
         if((int)$res == 0) return $this->message(0, '提交失败');
+
         M('User')->where(array('id'=>$uid))->setDec('balance', $total_price);
+
+        M('Product')->where(array('id'=>$pid))->setInc('sale', 1);
+
         return $this->message(1, '提交成功', U('User/orderList'));
 
     }

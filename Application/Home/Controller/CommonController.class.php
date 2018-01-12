@@ -17,6 +17,12 @@ class CommonController extends Controller {
         $this->_isLogin();
         $this->_confs();
         $this->_balance();
+        $this->_img();
+    }
+
+    protected function _img() {
+        $img = M('Img')->getField('name,pid,path', true);
+        $this->assign('img', $img);
     }
 
     protected function _confs() {

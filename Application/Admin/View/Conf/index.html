@@ -1,0 +1,32 @@
+<layout name="Common/admin_layout" />
+<form action="{:U()}" class="layui-form layui-form-pane">
+    <volist name="field" id="item">
+        <div class="layui-form-item">
+            <label class="layui-form-label">{$item.comment}</label>
+            <div class="layui-input-inline">
+                <input type="text" name="{$item.title}" value="{$item.value}" lay-verify="required" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+    </volist>
+    <div class="layui-form-item">
+        <div class="layui-input-block">
+            <button class="layui-btn" lay-submit lay-filter="*" post-form=".layui-form">立即提交</button>
+            <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+        </div>
+    </div>
+</form>
+<script>
+    layui.use(['form', 'jquery'], function () {
+        var form = layui.form;
+        var $ = layui.jquery;
+
+        form.on('submit(*)', function (data) {
+            var post = data.field;
+            var url = data.form.action;
+            $.post(url, post, function (res) {
+                layer.msg(res.info);
+            });
+            return false;
+        })
+    });
+</script>

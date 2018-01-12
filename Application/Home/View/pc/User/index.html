@@ -79,13 +79,28 @@
 								<input type="text" name="bank" class="idnum" value="{$data.bank}">
 							</span>
                         </li>
+                        <li>
+                            <span class="name">证件照：</span>
+                            <span class="fill">
+                                <notempty name="data.idcard_img">
+                                    <img src="{$data.idcard_img}" id="img" style="width:300px;height:150px;border:1px solid #eee;">
+                                <else />
+                                    <input type="button" id="upload-btn" value="上传">
+                                    <div class="img-box"></div>
+                                    <input type="hidden" name="idcard_img" id="idcard_img" value="{$data.idcard_img}">
+                                </notempty>
+							</span>
+                        </li>
                     </ul>
-                    <p><input type="submit" id="sub-btn" post-form="#subForm" value="保存"></p>
+                    <eq name="data.bind_bank" value="0">
+                        <p><input type="submit" id="sub-btn" post-form="#subForm" value="保存"></p>
+                    </eq>
                 </form>
             </div>
         </div>
     </div>
 </div>
+<script src="__PUBLIC__/home/js/jquery.upload.original.js"></script>
 <script>
     $('#sub-btn').ajaxPost(function (res) {
         if(res.status == -1) {
@@ -95,5 +110,32 @@
         } else {
             window.location.reload();
         }
-    })
+    });
+    $('#upload-btn').click(function () {
+        var that = $(this);
+        var text = that.text().trim();
+        $.upload({
+            url: '{:U("File/ajaxUpload?type=IDCARD")}',
+            accept : 'image',
+            dataType: 'json',
+            onSend: function () {
+                return true;
+            },
+            onSubmit: function () {
+                that.attr('disabled',true);
+                that.text('上传中...');
+            },
+            onComplate: function (data) {
+                that.attr('disabled', false);
+                that.text(text);
+                if (data.status == 1) {
+                    var html = '<img src="'+data.path+'" id="img" style="width:300px;height:150px;border:1px solid #eee;">';
+                    $('.img-box').html(html);
+                    $('#idcard_img').val(data.path);
+                } else {
+                    alert(data.info);
+                }
+            },
+        });
+    });
 </script>

@@ -53,33 +53,33 @@ class UserModel extends CommonModel {
         if ((int)$uid == 0)
             return $this->message(-10, '请先登录', U(C('LOGIN_URL')));
 
-        $user_pwd = $this->where(array('id'=>$uid))->getField('password');
-        if($user_pwd != md5(C('USER_KEY').$old_pwd))
+        $user_pwd = $this->where(array('id' => $uid))->getField('password');
+        if ($user_pwd != md5(C('USER_KEY') . $old_pwd))
             return $this->message(0, '原密码错误');
 
-        if(empty($new_pwd))
+        if (empty($new_pwd))
             return $this->message(0, '请填写新密码');
-        if(empty($verify_pwd))
+        if (empty($verify_pwd))
             return $this->message(0, '请确认密码');
         if ($new_pwd !== $verify_pwd)
             return $this->message(0, '密码不一致');
 
-        $res = $this->where(array('id'=>$uid))->save(array(
-            'password' => md5(C('USER_KEY').$new_pwd)
+        $res = $this->where(array('id' => $uid))->save(array(
+            'password' => md5(C('USER_KEY') . $new_pwd)
         ));
-        if($res === false)
+        if ($res === false)
             return $this->message(0, '保存失败');
-        return $this->message(1 , '保存成功', U('User/index'));
+        return $this->message(1, '保存成功', U('User/index'));
     }
 
     public function isBind($uid) {
-        $bind_bank = $this->where(array('id'=>$uid))->getField('bind_bank');
-        if((int)$bind_bank == 0)
+        $bind_bank = $this->where(array('id' => $uid))->getField('bind_bank');
+        if ((int)$bind_bank == 0)
             return false;
         return true;
     }
 
-    public function saveInfo($uid, $email, $realname, $idcard, $bank, $bankcard) {
+    public function saveInfo($uid, $email, $realname, $idcard, $idcard_img, $bank, $bankcard) {
         if ((int)$uid == 0)
             return $this->message(0, '请重新登录', U(C('LOGIN_URL')));
         if (empty($email))
@@ -90,19 +90,25 @@ class UserModel extends CommonModel {
             return $this->message(0, '请输入身份证');
         if (!in_array(strlen($idcard), array(15, 18)))
             return $this->message(0, '身份证格式错误');
-        if (empty($bank))
-            return $this->message(0, '请填写所属银行');
         if (empty($bankcard))
             return $this->message(0, '请填写银行卡号');
+        if (empty($bank))
+            return $this->message(0, '请填写所属银行');
+        if (empty($idcard_img))
+            return $this->message(0, '请上传证件照');
+
+        if($this->isBind($uid))
+            return $this->message(0, '已经绑定');
 
         $map['id'] = $uid;
         $data = array(
-            'email'    => $email,
-            'realname' => $realname,
-            'idcard'   => $idcard,
-            'bank'     => $bank,
-            'bankcard' => $bankcard,
-            'bind_bank' => 1,
+            'email'      => $email,
+            'realname'   => $realname,
+            'idcard'     => $idcard,
+            'bank'       => $bank,
+            'bankcard'   => $bankcard,
+            'idcard_img' => $idcard_img,
+            'bind_bank'  => 1,
         );
         $res = $this->where($map)->save($data);
         if ($res === false) return $this->message(0, '保存失败');

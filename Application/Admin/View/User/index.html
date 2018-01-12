@@ -12,6 +12,21 @@
 </blockquote>
 <table id="list" lay-filter="list"></table>
 
+<script type="text/html" id="datetimeTpl">
+    {{ layui.util.toDateString(parseInt(d.datetime)*1000, 'yyyy-MM-dd HH:mm:ss') }}
+</script>
+
+<script type="text/html" id="idcardTpl">
+    {{# if(d.idcard_img) { }}
+    <a href="{{ d.idcard_img }}" target="_blank" class="layui-btn-primary layui-btn-xs">查看</a>
+    {{# } }}
+</script>
+
+<script type="text/html" id="opBar">
+    <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
+    <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+</script>
+
 <script>
     layui.use(['table', 'util', 'jquery', 'layer'], function () {
         var table = layui.table;
@@ -31,6 +46,7 @@
                 {field: 'bankcard', title: '银行卡', align: 'center'},
                 {field: 'bank', title: '所属银行', align: 'center'},
                 {field: 'balance', title: '站点余额', align: 'center'},
+                {field: 'idcard_img', title: '证件照', align: 'center', templet: '#idcardTpl'},
                 {field: 'ip', title: '登录IP', align: 'center'},
                 {field: 'datetime', title: '注册日期', align: 'center', templet: '#datetimeTpl'},
                 {title: '操作', align: 'center', fixed: 'right', toolbar: '#opBar', width: 150}
@@ -96,11 +112,4 @@
             });
         });
     })
-</script>
-<script type="text/html" id="datetimeTpl">
-    {{ layui.util.toDateString(parseInt(d.datetime)*1000, 'yyyy-MM-dd HH:mm:ss') }}
-</script>
-<script type="text/html" id="opBar">
-    <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
-    <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
 </script>
