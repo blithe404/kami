@@ -2,28 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="00800b1e-d268-4211-8126-c26be189e0a0" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/Application/Admin/Model/OrderModel.class.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Application/Home/View/pc/Order/pay.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Public/home/css/single.css" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Application/Admin/Controller/PayOrderController.class.php" afterPath="$PROJECT_DIR$/Application/Admin/Controller/PayOrderController.class.php" />
-      <change beforePath="$PROJECT_DIR$/Application/Admin/Controller/UserController.class.php" afterPath="$PROJECT_DIR$/Application/Admin/Controller/UserController.class.php" />
-      <change beforePath="$PROJECT_DIR$/Application/Admin/Model/PayOrderModel.class.php" afterPath="$PROJECT_DIR$/Application/Admin/Model/PayOrderModel.class.php" />
-      <change beforePath="$PROJECT_DIR$/Application/Admin/View/PayOrder/index.html" afterPath="$PROJECT_DIR$/Application/Admin/View/PayOrder/index.html" />
-      <change beforePath="$PROJECT_DIR$/Application/Admin/View/User/order.html" afterPath="$PROJECT_DIR$/Application/Admin/View/User/order.html" />
-      <change beforePath="$PROJECT_DIR$/Application/Home/Controller/OrderController.class.php" afterPath="$PROJECT_DIR$/Application/Home/Controller/OrderController.class.php" />
-      <change beforePath="$PROJECT_DIR$/Application/Home/Model/OrderModel.class.php" afterPath="$PROJECT_DIR$/Application/Home/Model/OrderModel.class.php" />
-      <change beforePath="$PROJECT_DIR$/Application/Home/View/pc/Order/create.html" afterPath="$PROJECT_DIR$/Application/Home/View/pc/Order/create.html" />
+      <change beforePath="$PROJECT_DIR$/Application/Home/View/pc/Common/header.html" afterPath="$PROJECT_DIR$/Application/Home/View/pc/Common/header.html" />
       <change beforePath="$PROJECT_DIR$/Application/Home/View/pc/PayOrder/create.html" afterPath="$PROJECT_DIR$/Application/Home/View/pc/PayOrder/create.html" />
-      <change beforePath="$PROJECT_DIR$/Application/Home/View/pc/User/index.html" afterPath="$PROJECT_DIR$/Application/Home/View/pc/User/index.html" />
-      <change beforePath="$PROJECT_DIR$/Application/Home/View/pc/User/orderList.html" afterPath="$PROJECT_DIR$/Application/Home/View/pc/User/orderList.html" />
-      <change beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/6b5daf5d586aa0523876a07c2b20c769.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/6b5daf5d586aa0523876a07c2b20c769.php" />
-      <change beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/d5c09ac8bfa7aa73394c924f31881833.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/d5c09ac8bfa7aa73394c924f31881833.php" />
-      <change beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/1bd94bed498aa16999216834a314badc.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Home/1bd94bed498aa16999216834a314badc.php" />
-      <change beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/aa88ddc47a081d12e77db9d7f1eac9ca.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Home/aa88ddc47a081d12e77db9d7f1eac9ca.php" />
-      <change beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/ecfe80bec1248f2173f1536e9dc88424.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Home/ecfe80bec1248f2173f1536e9dc88424.php" />
-      <change beforePath="$PROJECT_DIR$/Application/Runtime/Logs/Admin/18_01_13.log" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Admin/18_01_13.log" />
+      <change beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/9cf6fe4b5749d5f0d0e19ab78b4ddd1a.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Home/9cf6fe4b5749d5f0d0e19ab78b4ddd1a.php" />
       <change beforePath="$PROJECT_DIR$/Application/Runtime/Logs/Home/18_01_13.log" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Home/18_01_13.log" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,20 +18,7 @@
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="create.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Application/Home/View/pc/PayOrder/create.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="539">
-              <caret line="64" column="29" lean-forward="false" selection-start-line="64" selection-start-column="29" selection-end-line="64" selection-end-column="29" />
-              <folding>
-                <element signature="n#style#0;n#span#0;n#span#1;n#li#0;n#ul#0;n#dd#0;n#dl#1;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -120,7 +88,6 @@
         <option value="$PROJECT_DIR$/Application/Admin/View/Admin/pwd.html" />
         <option value="$PROJECT_DIR$/Application/Admin/Model/AdminModel.class.php" />
         <option value="$PROJECT_DIR$/Application/Home/Controller/CommonController.class.php" />
-        <option value="$PROJECT_DIR$/Application/Home/View/pc/Common/header.html" />
         <option value="$PROJECT_DIR$/Application/Home/View/pc/Index/index.html" />
         <option value="$USER_HOME$/Library/Application Support/Yummy FTP/Remote Edits/103.100.210.59 Edits/my.cnf/my.cnf" />
         <option value="$PROJECT_DIR$/Application/Home/Model/OrderModel.class.php" />
@@ -139,6 +106,7 @@
         <option value="$PROJECT_DIR$/Application/Admin/Model/PayOrderModel.class.php" />
         <option value="$PROJECT_DIR$/Application/Admin/View/PayOrder/index.html" />
         <option value="$PROJECT_DIR$/Application/Home/View/pc/PayOrder/create.html" />
+        <option value="$PROJECT_DIR$/Application/Home/View/pc/Common/header.html" />
       </list>
     </option>
   </component>
@@ -307,18 +275,17 @@
       <workItem from="1515789159534" duration="4000" />
       <workItem from="1515790441951" duration="14000" />
       <workItem from="1515790474479" duration="1000" />
-      <workItem from="1515842283273" duration="8131000" />
+      <workItem from="1515842283273" duration="8797000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="119181000" />
+    <option name="totallyTimeSpent" value="119847000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="977" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3282887" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -735,21 +702,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Home/View/pc/Common/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
-          <caret line="44" column="43" lean-forward="false" selection-start-line="44" selection-start-column="43" selection-end-line="44" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Application/Home/View/pc/PayOrder/create.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="539">
-          <caret line="64" column="29" lean-forward="false" selection-start-line="64" selection-start-column="29" selection-end-line="64" selection-end-column="29" />
+        <state relative-caret-position="634">
+          <caret line="64" column="42" lean-forward="false" selection-start-line="64" selection-start-column="42" selection-end-line="64" selection-end-column="42" />
           <folding>
             <element signature="n#style#0;n#span#0;n#span#1;n#li#0;n#ul#0;n#dd#0;n#dl#1;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/pc/Common/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="24" column="62" lean-forward="false" selection-start-line="24" selection-start-column="62" selection-end-line="24" selection-end-column="62" />
+          <folding />
         </state>
       </provider>
     </entry>

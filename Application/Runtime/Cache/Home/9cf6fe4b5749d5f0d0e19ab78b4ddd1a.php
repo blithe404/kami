@@ -22,6 +22,7 @@
     <div class="top">
         <div class="contain">
             <span class="fr">
+                <a href="javascript:;">客服QQ: <?php echo ($confs["qq"]); ?></a> |
                 <a href="<?php echo U('User/index');?>">会员中心</a> |
                 <a href="<?php echo U('PayOrder/create');?>">充值</a>
                 <?php if(!empty(UID)): ?>| <a href="javascript:void(0);">站点余额：<?php echo (UBLANCE); ?>元</a><?php endif; ?>
