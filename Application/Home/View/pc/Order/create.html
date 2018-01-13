@@ -6,7 +6,7 @@
             <dl>
                 <dt>确认下单信息</dt>
                 <dd class="info">
-                    <div class="des">
+                    <div class="des" style="width:300px;">
                         <p>商品名称: <span class="blue" id="productName" name="productName">{$data.name}</span></p>
                         <p>商品类型: 卡密</p>
                         <p>单价: <font id="salePrice" name="salePrice">{$data.price}</font>元</p>
@@ -24,6 +24,11 @@
                                  style="position:absolute;top:0;right:0;">
                             <img class="down_img" src="__PUBLIC__/home/imgs/icon_down.jpg"
                                  style="position:absolute;bottom:0;right:0;">
+                        </span>
+                    </div>
+                    <div class="email num" style="float:left;">收货邮箱：
+                        <span class="numControl">
+                            <input type="email" name="email" id="email" value="{$email}" style="width:150px;height:30px;text-align:center;"/>
                         </span>
                     </div>
                     <br clear="all">
@@ -60,6 +65,8 @@
         if (!isInteger(val)) {
             $(this).val(1);
             $('#salePriceTotal').text(price);
+        } else {
+            $('#salePriceTotal').text((val - 0) * price);
         }
     });
 

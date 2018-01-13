@@ -40,7 +40,7 @@ class UserController extends CommonController {
                 'Order' => 'o',
                 'User' => 'u'
             );
-            $field = 'o.id,o.pname,o.price,o.number,o.total_price,o.datetime,u.username';
+            $field = 'o.id,o.pname,o.price,o.number,o.total_price,o.datetime,o.status,u.username';
             $map['o.uid'] = array('exp', '=u.id');
             $res = $this->getListByAjax(array(
                 'table' => $table,
@@ -119,6 +119,15 @@ class UserController extends CommonController {
                 'field' => $field,
                 'limit' => I('get.limit', 10, 'intval')
             ));
+            $this->ajaxReturn($res);
+        }
+    }
+
+    public function setOrderStatus() {
+        if (IS_POST) {
+            $id = I('post.id', 0, 'intval');
+            $status = I('post.status', 0, 'intval');
+            $res = D('Order')->setStatus($id, $status);
             $this->ajaxReturn($res);
         }
     }

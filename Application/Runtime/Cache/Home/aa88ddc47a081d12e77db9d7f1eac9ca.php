@@ -97,6 +97,7 @@
                             <span class="name">邮箱：</span>
                             <span class="fill">
 								<input type="text" name="email" class="email" value="<?php echo ($data["email"]); ?>">
+                                <span style="color:red">收货邮箱请详细填写</span>
 							</span>
                         </li>
                     </ul>

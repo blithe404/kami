@@ -88,8 +88,9 @@
                         <li>
                             <span class="name"><span class="red">*</span>汇款金额：</span>
                             <span class="fill">
-                            <input type="number" id="money" name="money">
-                        </span>
+                                <input type="number" id="money" name="money">
+                                <span style="color:red;">汇款金额以100为单位</span>
+                            </span>
                         </li>
                         <li>
                             <span class="name"><span class="red">*</span>汇款时间：</span>
@@ -111,6 +112,9 @@
     </div>
 </div>
 <script>
+    $(function () {
+        alert('<?php echo ($confs["qq"]); ?>');
+    });
     $('#sub-btn').ajaxPost(function (res) {
         console.log(res);
         if (res.status == -10) {

@@ -12,11 +12,22 @@
 <script type="text/html" id="opBar">
     {{# if(d.status == 0) { }}
     <a class="layui-btn layui-btn-xs" lay-event="verify">确认收款</a>
+    <a class="layui-btn layui-btn-xs layui-btn-danger" lay-event="error">错误订单</a>
     {{# } }}
 </script>
 
 <script type="text/html" id="paytimeTpl">
     {{ layui.util.toDateString(parseInt(d.paytime)*1000, 'yyyy-MM-dd HH:mm:ss') }}
+</script>
+
+<script type="text/html" id="statusTpl">
+    {{# if(d.status == 0) { }}
+    <span style="color:deepskyblue;">已提交</span>
+    {{# } else if(d.status == 1) { }}
+    <span style="color:chartreuse">已充值</span>
+    {{# } else if(d.status == -1) { }}
+    <span style="color:red">错误订单</span>
+    {{# } }}
 </script>
 
 <script>
@@ -39,7 +50,8 @@
                 {field: 'remark', title: '汇款备注', align: 'center'},
                 {field: 'name', title: '收款人', align: 'center'},
                 {field: 'card', title: '收款账户', align: 'center'},
-                {title: '操作', align: 'center', fixed: 'right', toolbar: '#opBar', width: 100}
+                {field: 'status', title: '状态', align: 'center', templet: '#statusTpl'},
+                {title: '操作', align: 'center', fixed: 'right', toolbar: '#opBar', width: 200}
             ]],
         });
 
@@ -51,6 +63,21 @@
                 var url = "{:U('verify')}";
                 var post = {id:data.id};
                 layer.confirm('是否确认收款，款项将会充值到该账户站点余额', function (index) {
+                    $.post(url, post, function (res) {
+                        if(res.status == 0) {
+                            layer.msg(res.info);
+                        } else {
+                            layer.msg(res.info, {time:1000}, function () {
+                                layer.close(index);
+                                list.reload();
+                            });
+                        }
+                    });
+                });
+            } else if (event === 'error') {
+                var url = "{:U('errorOrder')}";
+                var post = {id:data.id};
+                layer.confirm('确认操作', function (index) {
                     $.post(url, post, function (res) {
                         if(res.status == 0) {
                             layer.msg(res.info);

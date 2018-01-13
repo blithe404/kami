@@ -38,6 +38,7 @@
                         <td align="center" width="10%">单价(元)</td>
                         <td align="center" width="5%">数量</td>
                         <td align="center" width="10%">实付款(元)</td>
+                        <td align="center" width="10%">状态</td>
                     </tr>
                     </tbody>
                 </table>
@@ -49,6 +50,12 @@
                             <td align="center" width="10%">{$item.price}</td>
                             <td align="center" width="5%">{$item.number}</td>
                             <td align="center" width="10%">{$item.total_price}</td>
+                            <td align="center" width="10%">
+                                <eq name="item.status" value="0">待付款</eq>
+                                <eq name="item.status" value="1">待发货</eq>
+                                <eq name="item.status" value="2">已发货</eq>
+                                <eq name="item.status" value="3">已取消</eq>
+                            </td>
                         </tr>
                     </volist>
                     </tbody>

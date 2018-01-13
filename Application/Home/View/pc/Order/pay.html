@@ -1,0 +1,102 @@
+<layout name="Common/layout"/>
+<link rel="stylesheet" href="__PUBLIC__/home/css/single.css">
+<form action="{:U()}" method="post" id="subForm">
+    <div class="Mod-width-1200 Single">
+        <div class="Single_wary">
+            <div class="Single_waryList Payment_waryList">
+                <div class="Payment_list">
+                    <div class="Payment_listOrderInformation">
+                        <h2>
+                            <strong style="display:initial">订单信息</strong>
+                            <p style="float:right;color:#f00;">
+                                <img src="__PUBLIC__/home/imgs/icon_7.png" width="28" height="21" alt="订单提交成功">[订单提交成功，请在24小时之内完成支付，否则订单会自动取消。]
+                            </p>
+                        </h2>
+                        <div class="Payment_listOrderInformationCon">
+                            <ul class="ul_30">
+                                <li class="l_1 pore">
+                                    <span class="posa span_1">
+                                        订单编号：{:str_pad($data['id'], 10, '0', STR_PAD_LEFT)}
+                                        <input type="hidden" id="orderId" name="orderId" value="0018011319401772301">
+                                    </span>
+                                    <span class="posa span_3">单价</span>
+                                    <span class="posa span_4">数量</span>
+                                    <span class="posa span_5" style="width:440px;">收货邮箱</span>
+                                </li>
+                                <li class="l_1 pore l_2" style="height:26px;">
+                                    <span class="posa span_1">
+                                        <label title=""><strong>{$data.pname}</strong></label>
+                                    </span>
+                                    <span class="posa span_3">{$data.price}</span>
+                                    <span class="posa span_4" style="height:26px;">
+                                        <font style="color:#f00;font-size:14px;" id="i_add">{$data.number}</font>
+							        </span>
+                                    <span class="posa span_5" style="width:430px;text-align:center;padding-left:10px;">
+                                        {$data.email}
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="Payment_listOrderInformationCon_2 pore" style="height:10px">
+                            <font class="posa font_1">订单总计：<i>￥{$data.total_price}</i></font>
+                        </div>
+                        <div>
+                            <div class="Payment_listOrderInformationCon_2 pore" style="height:10px">
+                                <font class="posa font_1" style="padding-top: 28px;">应付总计：<i id="yinfu">￥{$data.total_price}</i></font>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="Single-list">
+                    <h4 class="h4-1">
+                        <strong style="padding-left:14px;font-size:14px;color:#333333;">选择支付方式</strong>
+                    </h4>
+                    <div class="jfPaymentBox" style="padding:0 20px;clear:both;border:none">
+                        <ul style="display: block">
+                            <li style="width:130px;">
+                                <label>
+                                    <input type="radio"checked="checked"></label>
+                                    <span style="height:40px;line-height:40px;font-size:20px;">
+                                        站点余额
+                                    </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="doSumbie">
+                        <input type="hidden" name="oid" value="{$data.id}">
+                        <span class="orange" id="zongji" style="font-family:Arial;font-size:18px;color:#ff4000;">￥{$data.total_price}</span>
+                        <input type="button" value="立即付款"  class="btnSumbit" id="sub-btn" post-form="#subForm">
+                    </div>
+                    <div class="Single-RefillReminders">
+                        <div class="RefillReminders">
+                            <h2><strong>充值提醒</strong></h2>
+                            <ul class="ul-10">
+                                <li><span>1、虚拟类产品售出后，由于其特殊性（无法回收二次销售），所以无法进行退换货操作。</span></li>
+                                <li><span>2、所有虚拟商品付款后会自动发货，任何人都无法修改订单信息，充值前请确认充值账号是否正确，请不要填写他人提供的账号，以免造成损失。</span></li>
+                                <li><span>3、不会以任何暗号、卡单、系统漏洞等原因让您填写其他第三方中间账户进行充值或付款。</span></li>
+                                <li><span>4、充值时，请按需购买，如非本人需要，请不要帮他人代买充值付款。充值过程中遇到任何问题，请与官方客服进行联系，请不要相信任何组织或个人提供的其他联系方式。</span></li>
+                                <li><span>5、请确认为本人购买，如非本人购买造成的损失，本站概不负责。</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+<script>
+    $('#sub-btn').ajaxPost(function (res) {
+        if (res.status == -10) {
+            window.location.href = res.url;
+        } else if (res.status == 0) {
+            alert(res.info);
+            if (res.url) {
+                window.location.href = res.url;
+            }
+        } else {
+            window.location.href = res.url;
+        }
+    });
+</script>

@@ -26,8 +26,33 @@
                 {field: 'price', title: '单价', align: 'center'},
                 {field: 'number', title: '数量', align: 'center'},
                 {field: 'total_price', title: '付款金额', align: 'center'},
-                {field: 'datetime', title: '创建日期', align: 'center', templet: '#datetimeTpl'}
+                {field: 'status', title: '状态', align: 'center', templet: '#statusTpl'},
+                {field: 'datetime', title: '创建日期', align: 'center', templet: '#datetimeTpl'},
+                {title: '操作', align: 'center', fixed: 'right', toolbar: '#opBar'}
             ]],
+        });
+
+        table.on('tool(list)', function (obj) {
+            var data = obj.data;
+            var event = obj.event;
+
+            if(event === 'send') {
+                var url = "{:U('setOrderStatus')}";
+                var post = {id:data.id,status:2};
+                layer.confirm('是否确认发货', function (index) {
+                    $.post(url, post, function (res) {
+                        if(res.status == 0) {
+                            layer.msg(res.info);
+                        } else {
+                            layer.msg(res.info, {time:1000}, function () {
+                                layer.close(index);
+                                list.reload();
+                            });
+                        }
+                    });
+                });
+            }
+
         });
 
         $('.search_btn').click(function () {
@@ -42,6 +67,22 @@
         });
     })
 </script>
+
+<script type="text/html" id="opBar">
+    {{# if(d.status == 1) { }}
+    <a class="layui-btn layui-btn-xs" lay-event="send">发货</a>
+    {{# } }}
+</script>
+
 <script type="text/html" id="datetimeTpl">
     {{ layui.util.toDateString(parseInt(d.datetime)*1000, 'yyyy-MM-dd HH:mm:ss') }}
+</script>
+<script type="text/html" id="statusTpl">
+    {{# if(d.status == 0) { }}
+    <span style="color:red;">未支付</span>
+    {{# } else if(d.status == 1) { }}
+    <span style="color:chartreuse">已支付</span>
+    {{# } else if(d.status == 2) { }}
+    <span style="color:deepskyblue">已发货</span>
+    {{# } }}
 </script>

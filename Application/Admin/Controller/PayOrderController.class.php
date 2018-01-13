@@ -49,6 +49,15 @@ class PayOrderController extends CommonController {
         }
     }
 
+    public function errorOrder() {
+        if(IS_POST) {
+            $id = I('post.id', 0, 'intval');
+            $Model = D($this->model);
+            $res = $Model->errorOrder($id);
+            $this->ajaxReturn($res);
+        }
+    }
+
     public function search() {
         if (IS_AJAX) {
             $keyword = I('get.keyword', '', 'trim');

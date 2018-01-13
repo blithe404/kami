@@ -85,6 +85,7 @@
                         <td align="center" width="10%">单价(元)</td>
                         <td align="center" width="5%">数量</td>
                         <td align="center" width="10%">实付款(元)</td>
+                        <td align="center" width="10%">状态</td>
                     </tr>
                     </tbody>
                 </table>
@@ -95,6 +96,12 @@
                             <td align="center" width="10%"><?php echo ($item["price"]); ?></td>
                             <td align="center" width="5%"><?php echo ($item["number"]); ?></td>
                             <td align="center" width="10%"><?php echo ($item["total_price"]); ?></td>
+                            <td align="center" width="10%">
+                                <?php if(($item["status"]) == "0"): ?>待付款<?php endif; ?>
+                                <?php if(($item["status"]) == "1"): ?>待发货<?php endif; ?>
+                                <?php if(($item["status"]) == "2"): ?>已发货<?php endif; ?>
+                                <?php if(($item["status"]) == "3"): ?>已取消<?php endif; ?>
+                            </td>
                         </tr><?php endforeach; endif; else: echo "" ;endif; ?>
                     </tbody>
                 </table>

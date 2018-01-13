@@ -22,4 +22,13 @@ class PayOrderModel extends CommonModel {
         $this->where(array('id' => $id))->setField('status', 1);
         return $this->message(1, '提交成功');
     }
+
+    public function errorOrder($id) {
+        if ((int)$id == 0)
+            return $this->message(0, '该记录不存在');
+        $res = $this->where(array('id'=>$id))->setField('status', -1);
+        if($res === false)
+            return $this->message(0, '保存失败');
+        return $this->message(0, '提交成功');
+    }
 }
