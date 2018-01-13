@@ -1,0 +1,624 @@
+[ 2018-01-13T19:10:41+08:00 ] 192.168.10.1 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000877s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000401s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000454s ]
+
+[ 2018-01-13T19:10:41+08:00 ] 192.168.10.1 /admin.php/Admin/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000050s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008809s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008920s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000263s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000271s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000299s ]
+
+[ 2018-01-13T19:10:43+08:00 ] 192.168.10.1 /admin.php/Admin/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000051s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000045s ]
+SQL: SHOW COLUMNS FROM `k_admin` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `k_admin` WHERE `name` = 'admin' AND `password` = '282a694d196a31babc741e2d1a7c8c7f' LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `k_admin` SET `ip`='192.168.10.1',`updatetime`='1515841843' WHERE `name` = 'admin' AND `password` = '282a694d196a31babc741e2d1a7c8c7f' [ RunTime:0.0031s ]
+
+[ 2018-01-13T19:10:43+08:00 ] 192.168.10.1 /admin.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000050s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000046s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028869s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028904s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000045s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000021s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000036s ]
+
+[ 2018-01-13T19:10:45+08:00 ] 192.168.10.1 /admin.php/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000066s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000071s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/User/sidebar.html): failed to open stream: No such file or directory /home/www/tp3/kami/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007556s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007604s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000063s ]
+
+[ 2018-01-13T19:10:45+08:00 ] 192.168.10.1 /admin.php/User/lists.html?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000045s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `k_user` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `k_user` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `k_user` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `k_user` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`username`,`email`,`realname`,`idcard`,`idcard_img`,`password`,`balance`,`bankcard`,`bank`,`ip`,`bind_bank`,`datetime`,`updatetime` FROM `k_user` LIMIT 0,10   [ RunTime:0.0002s ]
+
+[ 2018-01-13T19:10:46+08:00 ] 192.168.10.1 /admin.php/User/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000051s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000050s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/User/sidebar.html): failed to open stream: No such file or directory /home/www/tp3/kami/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000059s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019206s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019251s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000062s ]
+
+[ 2018-01-13T19:10:46+08:00 ] 192.168.10.1 /admin.php/User/order_lists.html?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000137s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000053s ]
+SQL: SHOW COLUMNS FROM `k_order` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `k_order` `o`,`k_user` `u` WHERE o.uid =u.id LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `k_order` [ RunTime:0.0006s ]
+SQL: SELECT o.id,o.pname,o.price,o.number,o.total_price,o.datetime,u.username FROM `k_order` `o`,`k_user` `u` WHERE o.uid =u.id LIMIT 0,10   [ RunTime:0.0002s ]
+
+[ 2018-01-13T19:10:47+08:00 ] 192.168.10.1 /admin.php/ProductCategory/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000053s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/ProductCategory/sidebar.html): failed to open stream: No such file or directory /home/www/tp3/kami/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000062s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009785s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009827s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000125s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000144s ]
+
+[ 2018-01-13T19:10:47+08:00 ] 192.168.10.1 /admin.php/ProductCategory/lists.html?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000069s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000094s ]
+SQL: SHOW COLUMNS FROM `k_product_category` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `k_product_category` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `k_product_category` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `k_product_category` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`sort` FROM `k_product_category` ORDER BY sort asc LIMIT 0,10   [ RunTime:0.0002s ]
+
+[ 2018-01-13T19:10:48+08:00 ] 192.168.10.1 /admin.php/Product/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000072s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000448s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000486s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Product/sidebar.html): failed to open stream: No such file or directory /home/www/tp3/kami/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007565s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007615s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000361s ]
+
+[ 2018-01-13T19:10:48+08:00 ] 192.168.10.1 /admin.php/Product/lists.html?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000052s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000053s ]
+SQL: SHOW COLUMNS FROM `k_product` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `k_product` `p`,`k_product_category` `pc` WHERE p.cid =pc.id LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `k_product` [ RunTime:0.0005s ]
+SQL: SELECT p.id,p.cid,p.name,p.sale,p.price,p.img,pc.name as cname FROM `k_product` `p`,`k_product_category` `pc` WHERE p.cid =pc.id LIMIT 0,10   [ RunTime:0.0002s ]
+
+[ 2018-01-13T19:10:48+08:00 ] 192.168.10.1 /admin.php/Bank/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000051s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000053s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Bank/sidebar.html): failed to open stream: No such file or directory /home/www/tp3/kami/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007034s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007090s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000064s ]
+
+[ 2018-01-13T19:10:48+08:00 ] 192.168.10.1 /admin.php/Bank/lists.html?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000065s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000055s ]
+SQL: SHOW COLUMNS FROM `k_bank` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `k_bank` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `k_bank` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `k_bank` [ RunTime:0.0005s ]
+SQL: SELECT `id`,`title`,`name`,`card` FROM `k_bank` LIMIT 0,10   [ RunTime:0.0002s ]
+
+[ 2018-01-13T19:10:49+08:00 ] 192.168.10.1 /admin.php/PayOrder/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000047s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000043s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/PayOrder/sidebar.html): failed to open stream: No such file or directory /home/www/tp3/kami/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010673s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010716s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000053s ]
+
+[ 2018-01-13T19:10:49+08:00 ] 192.168.10.1 /admin.php/PayOrder/lists.html?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000052s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000049s ]
+SQL: SHOW COLUMNS FROM `k_pay_order` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `k_pay_order` `po`,`k_user` `u`,`k_bank` `b` WHERE po.uid =u.id AND po.bank_id =b.id LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `k_pay_order` [ RunTime:0.0007s ]
+SQL: SELECT po.id,po.money,po.paytime,po.remark,po.status,po.datetime,u.username,u.bankcard,u.realname,b.card,b.name FROM `k_pay_order` `po`,`k_user` `u`,`k_bank` `b` WHERE po.uid =u.id AND po.bank_id =b.id ORDER BY po.status asc,po.datetime asc LIMIT 0,10   [ RunTime:0.0003s ]
+
+[ 2018-01-13T19:10:50+08:00 ] 192.168.10.1 /admin.php/Img/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000053s ]
+SQL: SHOW COLUMNS FROM `k_img` [ RunTime:0.0006s ]
+SQL: SELECT `name`,`pid`,`path` FROM `k_img`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Img/sidebar.html): failed to open stream: No such file or directory /home/www/tp3/kami/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000024s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000051s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008602s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008665s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000067s ]
+
+[ 2018-01-13T19:10:50+08:00 ] 192.168.10.1 /admin.php/Conf/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000052s ]
+SQL: SHOW COLUMNS FROM `k_conf` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `k_conf`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Conf/sidebar.html): failed to open stream: No such file or directory /home/www/tp3/kami/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010599s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010642s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000060s ]
+
+[ 2018-01-13T19:10:52+08:00 ] 192.168.10.1 /admin.php/Bank/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000158s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000074s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Bank/sidebar.html): failed to open stream: No such file or directory /home/www/tp3/kami/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000057s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010055s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010093s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000075s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000095s ]
+
+[ 2018-01-13T19:10:52+08:00 ] 192.168.10.1 /admin.php/Bank/lists.html?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000052s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000048s ]
+SQL: SHOW COLUMNS FROM `k_bank` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `k_bank` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `k_bank` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `k_bank` [ RunTime:0.0005s ]
+SQL: SELECT `id`,`title`,`name`,`card` FROM `k_bank` LIMIT 0,10   [ RunTime:0.0001s ]
+
+[ 2018-01-13T19:10:53+08:00 ] 192.168.10.1 /admin.php/ProductCategory/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000075s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/ProductCategory/sidebar.html): failed to open stream: No such file or directory /home/www/tp3/kami/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000058s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010594s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010642s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000062s ]
+
+[ 2018-01-13T19:10:53+08:00 ] 192.168.10.1 /admin.php/ProductCategory/lists.html?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000051s ]
+SQL: SHOW COLUMNS FROM `k_product_category` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `k_product_category` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `k_product_category` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `k_product_category` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`sort` FROM `k_product_category` ORDER BY sort asc LIMIT 0,10   [ RunTime:0.0001s ]
+
+[ 2018-01-13T19:10:53+08:00 ] 192.168.10.1 /admin.php/Product/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000051s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/Product/sidebar.html): failed to open stream: No such file or directory /home/www/tp3/kami/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011763s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011809s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000060s ]
+
+[ 2018-01-13T19:10:53+08:00 ] 192.168.10.1 /admin.php/Product/lists.html?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000052s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000053s ]
+SQL: SHOW COLUMNS FROM `k_product` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `k_product` `p`,`k_product_category` `pc` WHERE p.cid =pc.id LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `k_product` [ RunTime:0.0005s ]
+SQL: SELECT p.id,p.cid,p.name,p.sale,p.price,p.img,pc.name as cname FROM `k_product` `p`,`k_product_category` `pc` WHERE p.cid =pc.id LIMIT 0,10   [ RunTime:0.0001s ]
+
+[ 2018-01-13T19:10:54+08:00 ] 192.168.10.1 /admin.php/User/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000053s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/User/sidebar.html): failed to open stream: No such file or directory /home/www/tp3/kami/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000060s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009709s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009770s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000067s ]
+
+[ 2018-01-13T19:10:54+08:00 ] 192.168.10.1 /admin.php/User/order_lists.html?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000051s ]
+SQL: SHOW COLUMNS FROM `k_order` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `k_order` `o`,`k_user` `u` WHERE o.uid =u.id LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `k_order` [ RunTime:0.0005s ]
+SQL: SELECT o.id,o.pname,o.price,o.number,o.total_price,o.datetime,u.username FROM `k_order` `o`,`k_user` `u` WHERE o.uid =u.id LIMIT 0,10   [ RunTime:0.0001s ]
+
+[ 2018-01-13T19:10:54+08:00 ] 192.168.10.1 /admin.php/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000053s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/User/sidebar.html): failed to open stream: No such file or directory /home/www/tp3/kami/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010868s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010915s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000071s ]
+
+[ 2018-01-13T19:10:54+08:00 ] 192.168.10.1 /admin.php/User/lists.html?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000062s ]
+SQL: SHOW COLUMNS FROM `k_user` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `k_user` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `k_user` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `k_user` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`username`,`email`,`realname`,`idcard`,`idcard_img`,`password`,`balance`,`bankcard`,`bank`,`ip`,`bind_bank`,`datetime`,`updatetime` FROM `k_user` LIMIT 0,10   [ RunTime:0.0001s ]
+
+[ 2018-01-13T19:10:55+08:00 ] 192.168.10.1 /admin.php/User/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000171s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000519s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000054s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000079s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/User/sidebar.html): failed to open stream: No such file or directory /home/www/tp3/kami/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008013s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008051s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000070s ]
+
+[ 2018-01-13T19:10:55+08:00 ] 192.168.10.1 /admin.php/User/order_lists.html?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000103s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000150s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000047s ]
+SQL: SHOW COLUMNS FROM `k_order` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `k_order` `o`,`k_user` `u` WHERE o.uid =u.id LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `k_order` [ RunTime:0.0007s ]
+SQL: SELECT o.id,o.pname,o.price,o.number,o.total_price,o.datetime,u.username FROM `k_order` `o`,`k_user` `u` WHERE o.uid =u.id LIMIT 0,10   [ RunTime:0.0003s ]
+
+[ 2018-01-13T19:10:56+08:00 ] 192.168.10.1 /admin.php/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000050s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/User/sidebar.html): failed to open stream: No such file or directory /home/www/tp3/kami/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011878s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011921s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000072s ]
+
+[ 2018-01-13T19:10:56+08:00 ] 192.168.10.1 /admin.php/User/lists.html?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000053s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000051s ]
+SQL: SHOW COLUMNS FROM `k_user` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `k_user` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `k_user` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `k_user` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`username`,`email`,`realname`,`idcard`,`idcard_img`,`password`,`balance`,`bankcard`,`bank`,`ip`,`bind_bank`,`datetime`,`updatetime` FROM `k_user` LIMIT 0,10   [ RunTime:0.0001s ]
+
+[ 2018-01-13T19:10:57+08:00 ] 192.168.10.1 /admin.php/User/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000051s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/User/sidebar.html): failed to open stream: No such file or directory /home/www/tp3/kami/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011714s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011750s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000053s ]
+
+[ 2018-01-13T19:11:32+08:00 ] 192.168.10.1 /admin.php/User/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000318s ]
+SQL: SHOW COLUMNS FROM `k_user` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: validate /home/www/tp3/kami/ThinkPHP/Library/Think/Model.class.php 第 1185 行.
+SQL: SELECT * FROM `k_user` WHERE `username` = 'user1' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: auto /home/www/tp3/kami/ThinkPHP/Library/Think/Model.class.php 第 1128 行.
+SQL: INSERT INTO `k_user` (`username`,`email`,`realname`,`idcard`,`password`,`ip`,`datetime`) VALUES ('user1','user1@163.com','User','350802196910236010','99f26da77af15038dea7250eec6baeb3','192.168.10.1','1515841892') [ RunTime:0.0022s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::message(), called in /home/www/tp3/kami/Application/Admin/Model/UserModel.class.php on line 35 and defined /home/www/tp3/kami/Application/Admin/Model/CommonModel.class.php 第 7 行.
+NOTIC: [8] Undefined variable: url /home/www/tp3/kami/Application/Admin/Model/CommonModel.class.php 第 11 行.
+
+[ 2018-01-13T19:11:35+08:00 ] 192.168.10.1 /admin.php/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000073s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000066s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/User/sidebar.html): failed to open stream: No such file or directory /home/www/tp3/kami/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014564s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014605s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000372s ]
+
+[ 2018-01-13T19:11:35+08:00 ] 192.168.10.1 /admin.php/User/lists.html?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000050s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000049s ]
+SQL: SHOW COLUMNS FROM `k_user` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `k_user` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `k_user` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `k_user` [ RunTime:0.0005s ]
+SQL: SELECT `id`,`username`,`email`,`realname`,`idcard`,`idcard_img`,`password`,`balance`,`bankcard`,`bank`,`ip`,`bind_bank`,`datetime`,`updatetime` FROM `k_user` LIMIT 0,10   [ RunTime:0.0003s ]
+
+[ 2018-01-13T19:14:48+08:00 ] 192.168.10.1 /admin.php/User/edit.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000076s ]
+SQL: SHOW COLUMNS FROM `k_user` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `k_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/User/sidebar.html): failed to open stream: No such file or directory /home/www/tp3/kami/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000062s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013416s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013448s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000063s ]
+
+[ 2018-01-13T19:14:53+08:00 ] 192.168.10.1 /admin.php/User/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000076s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000110s ]
+SQL: SHOW COLUMNS FROM `k_user` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: validate /home/www/tp3/kami/ThinkPHP/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /home/www/tp3/kami/ThinkPHP/Library/Think/Model.class.php 第 1128 行.
+SQL: UPDATE `k_user` SET `email`='user1@163.com',`realname`='User',`idcard`='350802196910236010',`balance`='1000',`bankcard`='622848155350383',`bank`='农业',`ip`='192.168.10.1',`updatetime`='1515842093',`bind_bank`='1' WHERE `id` = 1 [ RunTime:0.0019s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::message(), called in /home/www/tp3/kami/Application/Admin/Model/UserModel.class.php on line 47 and defined /home/www/tp3/kami/Application/Admin/Model/CommonModel.class.php 第 7 行.
+NOTIC: [8] Undefined variable: url /home/www/tp3/kami/Application/Admin/Model/CommonModel.class.php 第 11 行.
+
+[ 2018-01-13T19:17:19+08:00 ] 192.168.10.1 /admin.php/User/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000061s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Admin/View/User/sidebar.html): failed to open stream: No such file or directory /home/www/tp3/kami/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000026s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000054s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015018s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015050s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000057s ]
+
+[ 2018-01-13T19:17:19+08:00 ] 192.168.10.1 /admin.php/User/order_lists.html?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000045s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000041s ]
+SQL: SHOW COLUMNS FROM `k_order` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `k_order` `o`,`k_user` `u` WHERE o.uid =u.id LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `k_order` [ RunTime:0.0004s ]
+SQL: SELECT o.id,o.pname,o.price,o.number,o.total_price,o.datetime,u.username FROM `k_order` `o`,`k_user` `u` WHERE o.uid =u.id LIMIT 0,10   [ RunTime:0.0002s ]
+
